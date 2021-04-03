@@ -139,6 +139,12 @@
   line-height: 200%;
 }
 
+.note {
+  color: var(--black-bright);
+  font-size: 12px;
+  line-height: 140%;
+}
+
 .item .item-text {
   color: var(--black-bright);
   font-size: 15px;
@@ -181,6 +187,14 @@ body {
 .vertial-writeing-mixed {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 /* common class */
