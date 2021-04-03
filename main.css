@@ -76,11 +76,6 @@
   height: 56px;
 }
 
-.vertial-writeing-mixed {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-}
-
 /* primitive class */
 * { 
   margin: 0px; 
@@ -104,6 +99,11 @@ body {
 .width-fill-image {
   width: 100%;
   height: auto;
+}
+
+.vertial-writeing-mixed {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 /* common class */
