@@ -17,6 +17,27 @@
   --purple-bright: #C1AFD2;
 }
 
+/* background color */
+.purple-1 {
+  background-color: #E6DEEE;
+}
+
+.purple-2 {
+  background-color: #EAE8F7;
+}
+
+.purple-3 {
+  background-color: #E8E9F7;
+}
+
+.purple-4 {
+  background-color: #E8EBF7;
+}
+
+.gradiention-1 {
+  background: linear-gradient(244.5deg, #7A47AC 0%, #5857B5 100%);
+}
+
 /* margins */
 .margin-h-auto {
   margin-left: auto;
@@ -60,6 +81,10 @@
   margin-top: 24px;
 }
 
+.margin-top-26 {
+  margin-top: 26px;
+}
+
 .margin-top-28 {
   margin-top: 28px;
 }
@@ -70,6 +95,10 @@
 
 .margin-top-80 {
   margin-top: 53px;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 24px;  
 }
 
 .height-56 {
@@ -85,19 +114,26 @@
   letter-spacing: 0.1em;
 }
 
-.caption2 {
+.caption1-white {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+}
+
+.caption2-primary {
   color: var(--primary-color);
   font-weight: bold;
   font-size: 20px;
   line-height: 160%;
 }
 
-.caption2-white {
-  color: var(--white);
+.caption2 {
+  color: var(--black-bright);
   font-weight: bold;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0.1em;
+  font-size: 20px;
+  line-height: 140%;
 }
 
 .caption3 {
@@ -132,11 +168,17 @@
   letter-spacing: 0.22em;
 }
 
-.body-text {
+.body-text-bold {
   color: var(--black-bright);
   font-weight: bold;
   font-size: 15px;
   line-height: 200%;
+}
+
+.body-text {
+  color: var(--black-bright);
+  font-size: 15px;
+  line-height: 160%;
 }
 
 .note {
@@ -168,6 +210,15 @@
   line-height: 62px;
 }
 
+.number {
+  font-family: Avenir;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  color: var(--white);
+}
+
 /* common class */
 * { 
   margin: 0px; 
@@ -188,6 +239,12 @@ body {
   align-items: center;
 }
 
+.box-flex-center-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .width-fill-image {
   width: 100%;
   height: auto;
@@ -204,6 +261,16 @@ body {
 
 .text-align-center {
   text-align: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 /* specific class */
@@ -314,4 +381,14 @@ body {
 .box-horizontal-list {
   height: 515px;
   width: 100%;
+}
+
+.rectangle {
+  height: 100px;
+  width: 100px;
+}
+
+.rectangle-s {
+  height: 50px;
+  width: 50px;
 }
