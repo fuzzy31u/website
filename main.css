@@ -76,81 +76,7 @@
   height: 56px;
 }
 
-/* primitive class */
-* { 
-  margin: 0px; 
-  padding: 0px; 
-}
-
-body {
-  font-family: "YuGothic" ;
-  color: var(--black-bright);
-}
-
-.box {
-  position: relative;
-}
-
-.box-flex-center {
-  display: flex;
-  align-items: center;
-}
-
-.width-fill-image {
-  width: 100%;
-  height: auto;
-}
-
-.vertial-writeing-mixed {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-}
-
-/* common class */
-.primary-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 56px;
-  width: 327px;
-  border-radius: 28px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--white);
-  background: linear-gradient(91.68deg, var(--primary-color) 0%, #5055CD 100%);
-}
-
-.primary-button .icon-next {
-  position: absolute;
-  right: 16px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.header {
-  height: 56px;
-  width: 100%;
-}
-
-.header .header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.box .message-on-img-woman {
-  position: absolute;
-  left: 24px;
-  bottom: 16px;
-  font-weight: bold;
-  font-size: 44px;
-  line-height: 62px;
-}
-
+/* typography */
 .caption1 {
   color: var(--black);
   font-weight: bold;
@@ -225,6 +151,81 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 100%;
+}
+
+/* primitive class */
+* { 
+  margin: 0px; 
+  padding: 0px; 
+}
+
+body {
+  font-family: "YuGothic" ;
+  color: var(--black-bright);
+}
+
+.box {
+  position: relative;
+}
+
+.box-flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.width-fill-image {
+  width: 100%;
+  height: auto;
+}
+
+.vertial-writeing-mixed {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* common class */
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 56px;
+  width: 327px;
+  border-radius: 28px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+  background: linear-gradient(91.68deg, var(--primary-color) 0%, #5055CD 100%);
+}
+
+.primary-button .icon-next {
+  position: absolute;
+  right: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header {
+  height: 56px;
+  width: 100%;
+}
+
+.header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.box .message-on-img-woman {
+  position: absolute;
+  left: 24px;
+  bottom: 16px;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 62px;
 }
 
 .underline-primary-color {
