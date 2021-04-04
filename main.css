@@ -51,6 +51,10 @@
   background-color: var(--black-bright-2);
 }
 
+.white {
+  background-color: var(--white);
+}
+
 /* margins */
 .margin-h-auto {
   margin-left: auto;
@@ -65,6 +69,10 @@
 .margin-h-24 {
   margin-left: 24px;
   margin-right: 24px;
+}
+
+.margin-left-8 {
+  margin-left: 12px;
 }
 
 .margin-left-12 {
@@ -158,6 +166,22 @@
   letter-spacing: 0.1em;
 }
 
+.caption1-number-primary {
+  color: var(--primary-color);
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.caption1-number-secondary {
+  color: var(--secondary-color);
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+}
+
 .caption2 {
   color: var(--black-bright);
   font-weight: bold;
@@ -172,12 +196,26 @@
   line-height: 160%;
 }
 
+.caption2-secondary {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 160%;
+}
+
 .caption2-white {
   color: var(--white);
   font-weight: bold;
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.1em;
+}
+
+.caption3 {
+  color: var(--black-bright);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 160%;
 }
 
 .caption3-primary {
@@ -245,10 +283,43 @@
   line-height: 160%;
 }
 
+.body-text-primary {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.body-text-secondary {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .note {
   color: var(--black-bright);
   font-size: 12px;
   line-height: 140%;
+}
+
+.note-bold {
+  color: var(--black-bright);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.note-primary {
+  color: var(--primary-color);
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.note-secondary {
+  color: var(--secondary-color);
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .item .item-text {
@@ -275,12 +346,10 @@
 }
 
 .number {
-  font-family: Avenir;
-  font-weight: 800;
+  color: var(--black-brights);
+  font-family: Lato;
+  font-weight: bold;
   font-size: 28px;
-  line-height: 100%;
-  letter-spacing: 0.1em;
-  color: var(--white);
 }
 
 /* common class */
@@ -312,6 +381,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.box-flex-center-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .width-fill-image {
@@ -536,4 +611,9 @@ body {
   font-weight: bold;
   font-size: 14px;
   color: var(--black-bright);
+}
+
+.rectangle-147-96 {
+  width: 147px;
+  height: 96px;
 }
