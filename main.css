@@ -12,6 +12,7 @@
   --secondary-color: #30349B;
   --black: #000000;
   --black-bright: #222222;
+  --black-bright-2: #444444;
   --white: #ffffff;
   --purple: #612A98;
   --purple-bright: #C1AFD2;
@@ -44,6 +45,10 @@
 
 .secondary-color {
   background-color: var(--secondary-color);
+}
+
+.black-bright-2 {
+  background-color: var(--black-bright-2);
 }
 
 /* margins */
@@ -202,6 +207,13 @@
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.1em;  line-height: 100%;
+}
+
+.caption4-white {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 140%;
 }
 
 .sub-caption-purple {
@@ -469,4 +481,57 @@ body {
 .rounded-boarder-secondary {
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
+}
+
+.comparison-table {
+  width: 92%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.comparison-table td {
+  border: 1px #EAE8F7 solid;
+  padding: 12;
+}
+
+.comparison-table th {
+  border: 1px var(--white) solid;
+  padding: 8;
+}
+
+.comparison-table tr th:nth-child(1) {
+  width: 20%;
+  background: #EAE8F7;
+}
+
+.table-note,
+.comparison-table tr:nth-child(n+3):nth-child(-n+4) td {
+  font-family: Noto Sans JP;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--black-bright);
+}
+
+.comparison-table tr th:nth-child(1),
+.comparison-table tr:nth-child(n+5) {
+  font-family: Noto Sans JP;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 140%;
+  color: var(--black-bright-2);
+}
+
+.comparison-table tr th:nth-child(2) {
+  width: 40%;
+}
+
+.comparison-table tr th:nth-child(3) {
+  width: 40%;
+}
+
+.table-caption {
+  font-family: Noto Sans JP;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--black-bright);
 }
