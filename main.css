@@ -129,6 +129,10 @@
   margin-top: 53px;
 }
 
+.margin-top-58 {
+  margin-top: 58px;
+}
+
 .margin-top-72 {
   margin-top: 72px;
 }
@@ -163,6 +167,14 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 100%;
+  letter-spacing: 0.1em;
+}
+
+.caption1-lh140 {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
   letter-spacing: 0.1em;
 }
 
@@ -277,7 +289,14 @@
   letter-spacing: 0.22em;
 }
 
-.body-text-bold {
+.body-text-bold-lh160 {
+  color: var(--black-bright);
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.body-text-bold-lh200 {
   color: var(--black-bright);
   font-weight: bold;
   font-size: 15px;
@@ -336,6 +355,13 @@
 
 .note-secondary {
   color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.note-secondary-lato {
+  color: var(--secondary-color);
   font-family: Lato;
   font-weight: bold;
   font-size: 12px;
@@ -350,6 +376,13 @@
 
 .button-title {
   color: var(--white);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.button-title-secondary {
+  color: var(--primary-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 100%;
@@ -431,8 +464,8 @@ body {
 }
 
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 104px;
+  height: 104px;
   border-radius: 50%;
 }
 
@@ -451,6 +484,14 @@ body {
 
 .rounded-top {
   border-radius: 4px 4px 0px 0px;
+}
+
+.top-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
 }
 
 /* specific class */
@@ -484,11 +525,26 @@ body {
   background: linear-gradient(91.68deg, var(--primary-color) 0%, #5055CD 100%);
 }
 
-.primary-button .icon-next {
+.primary-button .icon-next,
+.secondary-button .icon-next {
   position: absolute;
   right: 16px;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 56px;
+  width: 327px;
+  border-radius: 28px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 
 .underline-primary-color {
@@ -538,6 +594,15 @@ body {
   right: 0px;
   width: 223px;
   height: 286px;
+  z-index: -1;
+}
+
+.img-cousering {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
   z-index: -1;
 }
 
