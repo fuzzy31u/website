@@ -473,6 +473,7 @@ body {
   width: 100%;
 }
 
+/* rounded-boarder */
 .rounded-boarder-primary {
   border: 1px solid var(--primary-color);
   border-radius: 4px;
@@ -483,6 +484,7 @@ body {
   border-radius: 4px;
 }
 
+/* comparion-table */
 .comparison-table {
   width: 92%;
   table-layout: fixed;
