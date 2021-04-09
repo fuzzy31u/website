@@ -4,6 +4,7 @@
   --font-2x: calc(2 * var(--font-unit)); 
   --font-3x: calc(3 * var(--font-unit));
   --font-4x: calc(4 * var(--font-unit));
+  --font-4xh: calc(4.5 * var(--font-unit));
   --font-5x: calc(5 * var(--font-unit));
   --font-6x: calc(6 * var(--font-unit));
   --font-7x: calc(7 * var(--font-unit));
@@ -12,9 +13,10 @@
 }
 
 .font-6x-bold {
-  color: var(--black);
   font-weight: bold;
   font-size: var(--font-6x);
+  /* TODO: remove */
+  color: var(--black);
   letter-spacing: 0.1em;
 }
 
@@ -51,7 +53,7 @@
 }
 
 .caption2 {
-  color: var(--black-bright);
+  color: var(--black-1);
   font-weight: bold;
   font-size: 20px;
   line-height: 140%;
@@ -80,7 +82,14 @@
 }
 
 .caption3 {
-  color: var(--black-bright);
+  color: var(--black-1);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.caption3 {
+  color: var(--black-1);
   font-weight: bold;
   font-size: 16px;
   line-height: 160%;
@@ -123,20 +132,13 @@
 }
 
 .sub-caption {
-  color: var(--black-bright);
+  color: var(--black-1);
   font-size: 14px;
-  line-height: 140%;
-}
-
-.sub-caption-bold {
-  color: var(--black-bright);
-  font-size: 14px;
-  font-weight: bold;
   line-height: 140%;
 }
 
 .sub-caption-purple {
-  color: var(--purple-bright);
+  color: var(--purple-5);
   font-family: Lato;
   font-weight: bold;
   font-size: 14px;
@@ -145,21 +147,21 @@
 }
 
 .body-text-bold-lh160 {
-  color: var(--black-bright);
+  color: var(--black-1);
   font-weight: bold;
   font-size: 15px;
   line-height: 160%;
 }
 
 .body-text-bold-lh200 {
-  color: var(--black-bright);
+  color: var(--black-1);
   font-weight: bold;
   font-size: 15px;
   line-height: 200%;
 }
 
 .body-text {
-  color: var(--black-bright);
+  color: var(--black-1);
   font-size: 15px;
   line-height: 160%;
 }
@@ -183,13 +185,13 @@
 }
 
 .note {
-  color: var(--black-bright);
+  color: var(--black-1);
   font-size: 12px;
   line-height: 140%;
 }
 
 .note-bold {
-  color: var(--black-bright);
+  color: var(--black-1);
   font-weight: bold;
   font-size: 12px;
   line-height: 140%;
@@ -223,7 +225,7 @@
 }
 
 .item .item-text {
-  color: var(--black-bright);
+  color: var(--black-1);
   font-size: 15px;
   line-height: 160%;
   letter-spacing: 0.1em;
@@ -244,7 +246,7 @@
 }
 
 .number {
-  color: var(--black-brights);
+  color: var(--black-1);
   font-family: Lato;
   font-weight: bold;
   font-size: 28px;

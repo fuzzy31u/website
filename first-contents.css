@@ -15,7 +15,10 @@
   margin-top: auto;
   margin-left: var(--space-4x);
   margin-bottom: calc(4.5 * var(--space-unit));
-  color: var(--black-bright);
+  color: var(--black-1);
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--black-1);
   line-height: 160%;
   letter-spacing: calc(0.4 * var(--space-unit));
 }
@@ -24,4 +27,33 @@
   position: absolute;
   bottom: 0px;
   left: var(--space-4x);
+}
+
+.entry-button-above-caption {
+  margin-top: var(--space-4x);
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--font-4xh);
+  color: #222222;
+  line-height: 160%;
+}
+
+.entry-button-comment {
+  margin-top: var(--space-4x);
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(3.75 * var(--font-unit));
+}
+
+#first-contents .entry-button {
+  margin: var(--space-3x) auto 0 auto
+}
+
+.dead-line {
+  margin-top: var(--space-3x);
+  font-weight: bold;
+  font-size: var(--font-3x);
+  text-align: center;
+  text-align: center;
+  color: var(--black);
 }

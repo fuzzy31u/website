@@ -1,30 +1,34 @@
 :root {
   --primary-color: #6121A1;
-  --primary-color-bright: #DADBF2;
+  --primary-color-1: #DADBF2;
   --secondary-color: #30349B;
   --black: #000000;
   --black-1: #222222;
   --black-2: #444444;
   --white: #ffffff;
   --purple: #612A98;
-  --purple-bright: #C1AFD2;
+  --purple-1: #E6DEEE;
+  --purple-2: #EAE8F7;
+  --purple-3: #E8E9F7;
+  --purple-4: #E8EBF7;
+  --purple-5: #C1AFD2;
 }
 
 /* background color */
 .purple-1 {
-  background-color: #E6DEEE;
+  background-color: var(--purple-1);
 }
 
 .purple-2 {
-  background-color: #EAE8F7;
+  background-color: var(--purple-2);
 }
 
 .purple-3 {
-  background-color: #E8E9F7;
+  background-color: var(--purple-3);
 }
 
 .purple-4 {
-  background-color: #E8EBF7;
+  background-color: var(--purple-4);
 }
 
 .gradiention-1 {
