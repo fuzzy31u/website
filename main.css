@@ -127,6 +127,15 @@ body {
   letter-spacing: 0.22em;
 }
 
+.contents-caption .main-caption {
+  margin-left: var(--space-4x);
+  font-weight: bold;
+  font-size: var(--font-6x);
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: var(--black);
+}
+
 /* button */
 .primary-button {
   display: flex;
