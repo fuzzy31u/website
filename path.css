@@ -1,0 +1,37 @@
+.partners {
+  margin-top: var(--space-5x);
+}
+
+.logo-mercari {
+  margin-left: calc(0.75 * var(--space-unit));
+}
+
+.logo-SONY {
+  margin-left: calc(1.5 * var(--space-unit));
+}
+
+.logo-IBM {
+  margin-left: calc(15 * var(--space-unit));
+}
+
+.logo-LINE {
+  margin-left: calc(4.5 * var(--space-unit));
+}
+
+.logo-Rakuten {
+  margin-left: calc(15 * var(--space-unit));
+}
+
+.partners .row-1 {
+  /* text-align: center; */
+}
+
+.partners .row-2 {
+  margin-top: var(--space-4x);
+  /* text-align: center; */
+}
+
+.partners .row-3 {
+  margin-top: calc(8.5 * var(--space-unit));
+  /* text-align: center;   */
+}
