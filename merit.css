@@ -1,0 +1,54 @@
+.merits {
+  margin-top: calc(6.5 * var(--space-unit))
+}
+
+.merits>div:nth-child(1) {
+  background-color: var(--purple-1);
+}
+
+.merits>div:nth-child(2) {
+  background-color: var(--purple-2);
+}
+
+.merits>div:nth-child(3) {
+  background-color: var(--purple-3);
+}
+
+.merits>div:nth-child(4) {
+  background-color: var(--purple-4);
+}
+
+.merits>div:nth-child(n+2):nth-child(-n+4) {
+  margin-top: var(--space-4x);
+}
+
+.merit {
+  margin-left: var(--space-4x);
+  margin-right: var(--space-4x);
+  overflow: hidden;
+}
+
+.merit-captions {
+  margin: calc(6.5 * var(--space-unit)) var(--space-6x) 0 var(--space-6x);
+  display: flex;
+  align-items: center;
+}
+
+.merit-caption {
+  margin-left: var(--space-4x);
+  font-weight: bold;
+  font-size: var(--font-5x);
+  line-height: 140%;
+  color: var(--black-2);
+}
+
+.merit-body {
+  margin: var(--space-4x) var(--space-6x) 0 var(--space-6x);
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--black-2);
+}
+
+.merit-emphasis {
+  font-weight: bold;
+}
