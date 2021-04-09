@@ -108,6 +108,11 @@ body {
   margin-right: 16px;
 }
 
+/* contents */
+#contents>div:nth-child(n+2) {
+  margin-top: var(--space-20x);
+}
+
 /* contents-caption */
 .contents-caption {
   display: flex;
