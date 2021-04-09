@@ -151,6 +151,13 @@ body {
   color: var(--black-2)
 }
 
+.contents-caption .explaination {
+  margin-top: var(--space-4x);
+  font-size: calc(3.75 * var(--font-unit));
+  line-height: 160%;
+  color: var(--black-2);
+}
+
 /* button */
 .primary-button {
   display: flex;
