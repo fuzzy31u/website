@@ -143,6 +143,14 @@ body {
   margin-left: var(--space-4x);
 }
 
+.contents-caption .annotation {
+  margin-top: var(--space-8x);
+  font-weight: 500;
+  font-size: var(--font-3xh);
+  line-height: 140%;
+  color: var(--black-2)
+}
+
 /* button */
 .primary-button {
   display: flex;
