@@ -53,7 +53,7 @@
 }
 
 .caption2 {
-  color: var(--black-1);
+  color: var(--black-2);
   font-weight: bold;
   font-size: 20px;
   line-height: 140%;
@@ -82,14 +82,14 @@
 }
 
 .caption3 {
-  color: var(--black-1);
+  color: var(--black-2);
   font-weight: bold;
   font-size: 16px;
   line-height: 160%;
 }
 
 .caption3 {
-  color: var(--black-1);
+  color: var(--black-2);
   font-weight: bold;
   font-size: 16px;
   line-height: 160%;
@@ -132,7 +132,7 @@
 }
 
 .sub-caption {
-  color: var(--black-1);
+  color: var(--black-2);
   font-size: 14px;
   line-height: 140%;
 }
@@ -147,21 +147,21 @@
 }
 
 .body-text-bold-lh160 {
-  color: var(--black-1);
+  color: var(--black-2);
   font-weight: bold;
   font-size: 15px;
   line-height: 160%;
 }
 
 .body-text-bold-lh200 {
-  color: var(--black-1);
+  color: var(--black-2);
   font-weight: bold;
   font-size: 15px;
   line-height: 200%;
 }
 
 .body-text {
-  color: var(--black-1);
+  color: var(--black-2);
   font-size: 15px;
   line-height: 160%;
 }
@@ -185,13 +185,13 @@
 }
 
 .note {
-  color: var(--black-1);
+  color: var(--black-2);
   font-size: 12px;
   line-height: 140%;
 }
 
 .note-bold {
-  color: var(--black-1);
+  color: var(--black-2);
   font-weight: bold;
   font-size: 12px;
   line-height: 140%;
@@ -225,7 +225,7 @@
 }
 
 .item .item-text {
-  color: var(--black-1);
+  color: var(--black-2);
   font-size: 15px;
   line-height: 160%;
   letter-spacing: 0.1em;
@@ -246,7 +246,7 @@
 }
 
 .number {
-  color: var(--black-1);
+  color: var(--black-2);
   font-family: Lato;
   font-weight: bold;
   font-size: 28px;

@@ -15,10 +15,10 @@
   margin-top: auto;
   margin-left: var(--space-4x);
   margin-bottom: calc(4.5 * var(--space-unit));
-  color: var(--black-1);
+  color: var(--black-2);
   font-weight: bold;
   font-size: 14px;
-  color: var(--black-1);
+  color: var(--black-2);
   line-height: 160%;
   letter-spacing: calc(0.4 * var(--space-unit));
 }
@@ -56,4 +56,34 @@
   text-align: center;
   text-align: center;
   color: var(--black);
+}
+
+.closing-word-box {
+  position: relative;
+  margin-top: var(--space-6x);
+}
+
+.img-woman-02 {
+  position: absolute;
+  top: 216px;
+  right: 0px;
+  width: 223px;
+  height: 286px;
+  z-index: -1;
+}
+
+.closing-caption {
+  margin: var(--space-6x) var(--space-6x) 0 var(--space-6x);
+  font-weight: bold;
+  font-size: var(--font-5x);
+  line-height: 160%;
+  color: var(--black-2);
+}
+
+.closing-word {
+  margin: var(--space-4x) var(--space-6x) 0 var(--space-6x);
+  font-weight: bold;
+  font-size: calc(3.75 * var(--font-unit));
+  line-height: 200%;
+  color: var(--black-2);
 }

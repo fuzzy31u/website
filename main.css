@@ -17,7 +17,7 @@
 
 body {
   font-family: "YuGothic" ;
-  color: var(--black-1);
+  color: var(--black-2);
 }
 
 .box {
@@ -176,15 +176,6 @@ body {
 }
 
 /* image */
-.img-woman-02 {
-  position: absolute;
-  top: 216px;
-  right: 0px;
-  width: 223px;
-  height: 286px;
-  z-index: -1;
-}
-
 .img-cousering {
   position: absolute;
   top: 0px;
@@ -258,7 +249,7 @@ body {
   font-family: Noto Sans JP;
   font-weight: bold;
   font-size: 14px;
-  color: var(--black-1);
+  color: var(--black-2);
 }
 
 .comparison-table tr th:nth-child(1),
@@ -267,7 +258,7 @@ body {
   font-weight: bold;
   font-size: 12px;
   line-height: 140%;
-  color: var(--black-2);
+  color: var(--black-4);
 }
 
 .comparison-table tr th:nth-child(2) {
@@ -282,7 +273,7 @@ body {
   font-family: Noto Sans JP;
   font-weight: bold;
   font-size: 14px;
-  color: var(--black-1);
+  color: var(--black-2);
 }
 
 .rectangle-147-96 {
