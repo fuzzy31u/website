@@ -9,6 +9,7 @@
   --space-7x: calc(7 * var(--space-unit));
   --space-8x: calc(8 * var(--space-unit));
   --space-9x: calc(9 * var(--space-unit));
+  --space-20x: calc(20 * var(--space-unit));
 }
 
 /* horizontal margin */
