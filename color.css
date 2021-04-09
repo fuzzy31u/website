@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #6121A1;
+  --primary-color-bright: #DADBF2;
+  --secondary-color: #30349B;
+  --black: #000000;
+  --black-1: #222222;
+  --black-2: #444444;
+  --white: #ffffff;
+  --purple: #612A98;
+  --purple-bright: #C1AFD2;
+}
+
+/* background color */
+.purple-1 {
+  background-color: #E6DEEE;
+}
+
+.purple-2 {
+  background-color: #EAE8F7;
+}
+
+.purple-3 {
+  background-color: #E8E9F7;
+}
+
+.purple-4 {
+  background-color: #E8EBF7;
+}
+
+.gradiention-1 {
+  background: linear-gradient(244.5deg, #7A47AC 0%, #5857B5 100%);
+}
+
+.primary-color {
+  background-color: var(--primary-color);
+}
+
+.secondary-color {
+  background-color: var(--secondary-color);
+}
+
+.black-bright-2 {
+  background-color: var(--black-2);
+}
+
+.white {
+  background-color: var(--white);
+}
