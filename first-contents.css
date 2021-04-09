@@ -1,0 +1,27 @@
+.message-on-img-woman {
+  position: absolute;
+  left: var(--space-6x);
+  bottom: calc(26 * var(--space-unit));
+  font-weight: bold;
+  font-size: calc(11 * var(--space-unit));
+  line-height: calc(15.5 * var(--space-unit));
+}
+
+.icon-minimum-span {
+  margin-bottom: var(--space-2x);
+}
+
+.fisrt-view-sub-caption {
+  margin-top: auto;
+  margin-left: var(--space-4x);
+  margin-bottom: calc(4.5 * var(--space-unit));
+  color: var(--black-bright);
+  line-height: 160%;
+  letter-spacing: calc(0.4 * var(--space-unit));
+}
+
+.first-view-bottom-content {
+  position: absolute;
+  bottom: 0px;
+  left: var(--space-4x);
+}
