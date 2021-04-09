@@ -117,14 +117,6 @@
   line-height: 100%;
 }
 
-.caption3-purple {
-  color: var(--purple);
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0.1em;  line-height: 100%;
-}
-
 .caption4-white {
   color: var(--white);
   font-weight: bold;
