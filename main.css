@@ -191,32 +191,6 @@ body {
   z-index: -1;
 }
 
-/* horizontal-list */
-.horizontal-list {
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  padding-inline-start: 0px;
-}
-
-.horizontal-list .item {
-  display: inline-block;
-  width: 280px;
-  height: 491px;
-  white-space: normal;
-  margin-left: 24px;
-  background-color: var(--white);
-}
-
-.horizontal-list li:last-child {
-  margin-right: 24px;
-}
-
-.box-horizontal-list {
-  height: 515px;
-  width: 100%;
-}
-
 /* rounded-boarder */
 .rounded-boarder-primary {
   border: 1px solid var(--primary-color);
