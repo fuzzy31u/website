@@ -2,3 +2,73 @@
   margin-top: var(--space-2x);
   text-align: center;
 }
+
+.curriculums {
+  margin: var(--space-4x) var(--space-4x) 0 var(--space-4x)
+}
+
+.curriculum {
+  border-radius: 4px 4px 4px 4px;
+}
+
+.curriculums .curriculum:nth-child(1) {
+  border: 1px solid var(--primary-color);
+}
+
+.curriculums .curriculum:nth-child(2) {
+  margin-top: var(--space-4x);
+  border: 1px solid var(--secondary-color);
+}
+
+.curriculum-caption {
+  border-radius: 4px 4px 0px 0px;
+  text-align: center;
+}
+
+.curriculums .curriculum:nth-child(1) .curriculum-caption {
+  background-color: var(--primary-color);
+}
+
+.curriculums .curriculum:nth-child(2) .curriculum-caption {
+  background-color: var(--secondary-color);
+}
+
+.curriculum-caption .captions {
+  display: flex;
+  align-items: center;
+  margin-left: var(--space-4x);
+  margin-right: var(--space-4x);
+}
+
+.curriculum-caption .caption-main {
+  font-weight: bold;
+  font-size: var(--space-4x);
+  line-height: 120%;
+  color: var(--white);
+  text-align: left;
+}
+
+.curriculum-caption .caption-sub {
+  margin: var(--space-5x) 0 var(--space-5x) var(--space-4x);
+  font-family: Lato;
+  font-weight: bold;
+  font-size: var(--font-6x);
+  text-align: right;
+  color: var(--white);
+  opacity: 0.3;
+}
+
+.curriculum .curriculum-explanation {
+  margin: var(--space-4x);
+  font-weight: bold;
+  font-size: var(--font-4x);
+  line-height: 160%;
+}
+
+.curriculums .curriculum:nth-child(1) .curriculum-explanation {
+  color: var(--primary-color);
+}
+
+.curriculums .curriculum:nth-child(2) .curriculum-explanation {
+  color: var(--secondary-color);
+}

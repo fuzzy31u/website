@@ -156,7 +156,7 @@ body {
   color: var(--black-2)
 }
 
-.contents-caption .explaination {
+.contents-caption .explanation {
   margin-top: var(--space-4x);
   font-size: calc(3.75 * var(--font-unit));
   line-height: 160%;
@@ -216,17 +216,6 @@ body {
   width: 100%;
   height: auto;
   z-index: -1;
-}
-
-/* rounded-boarder */
-.rounded-boarder-primary {
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-}
-
-.rounded-boarder-secondary {
-  border: 1px solid var(--secondary-color);
-  border-radius: 4px;
 }
 
 /* comparion-table */
