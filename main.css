@@ -424,23 +424,23 @@ body {
   position: relative;
 }
 
-.box-flex-center {
+.flex-box-center {
   display: flex;
   align-items: center;
 }
 
-.box-flex-start {
+.flex-box-start {
   display: flex;
   align-items: start;
 }
 
-.box-flex-center-middle {
+.flex-box-center-middle {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.box-flex-center-space-between {
+.flex-box-center-space-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
