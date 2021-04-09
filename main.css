@@ -116,6 +116,17 @@ body {
   margin-right: var(--space-6x)
 }
 
+.contents-caption .sub-caption {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: var(--purple-5);
+  font-family: Lato;
+  font-weight: bold;
+  font-size: var(--font-3xh);
+  line-height: 100%;
+  letter-spacing: 0.22em;
+}
+
 /* button */
 .primary-button {
   display: flex;

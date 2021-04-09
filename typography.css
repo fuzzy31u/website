@@ -3,6 +3,7 @@
   --font-1x: calc(1 * var(--font-unit));
   --font-2x: calc(2 * var(--font-unit)); 
   --font-3x: calc(3 * var(--font-unit));
+  --font-3xh: calc(3.5 * var(--font-unit));
   --font-4x: calc(4 * var(--font-unit));
   --font-4xh: calc(4.5 * var(--font-unit));
   --font-5x: calc(5 * var(--font-unit));
