@@ -12,7 +12,7 @@
   --secondary-color: #30349B;
   --black: #000000;
   --black-1: #222222;
-  --black-bright-2: #444444;
+  --black-2: #444444;
   --white: #ffffff;
   --purple: #612A98;
   --purple-bright: #C1AFD2;
@@ -48,7 +48,7 @@
 }
 
 .black-bright-2 {
-  background-color: var(--black-bright-2);
+  background-color: var(--black-2);
 }
 
 .white {
@@ -317,7 +317,7 @@ body {
   font-weight: bold;
   font-size: 12px;
   line-height: 140%;
-  color: var(--black-bright-2);
+  color: var(--black-2);
 }
 
 .comparison-table tr th:nth-child(2) {
