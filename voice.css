@@ -1,3 +1,20 @@
 .voice-contents {
   margin-top: var(--space-20x);
 }
+
+.voices {
+  position: relative;
+  margin-top: var(--space-7x);
+  height: 515px;
+  width: 100%;
+}
+
+.gradiention-rect {
+  position: absolute;
+  width: 100%;
+  height: 491px;
+  left: 0px;
+  bottom: 0px;
+  background: linear-gradient(240.91deg, #7A47AC 5.1%, #5857B5 100%);
+  z-index: -1;
+}

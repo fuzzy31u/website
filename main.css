@@ -181,17 +181,6 @@ body {
   background: linear-gradient(transparent 0%, #FFF38A 0%);
 }
 
-/* box */
-.gradiention-rect {
-  position: absolute;
-  width: 100%;
-  height: 491px;
-  left: 0px;
-  bottom: 0px;
-  background: linear-gradient(240.91deg, #7A47AC 5.1%, #5857B5 100%);
-  z-index: -1;
-}
-
 /* image */
 .img-cousering {
   position: absolute;
