@@ -144,7 +144,7 @@ body {
 }
 
 .contents-caption .annotation {
-  margin-top: var(--space-8x);
+  margin-top: var(--space-2x);
   font-weight: 500;
   font-size: var(--font-3xh);
   line-height: 140%;
