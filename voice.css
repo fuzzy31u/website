@@ -16,14 +16,14 @@
 }
 
 /* horizontal-list */
-.horizontal-list {
+.voices .horizontal-list {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   padding-inline-start: 0px;
 }
 
-.horizontal-list .item {
+.voices .horizontal-list .item {
   display: inline-block;
   width: 280px;
   height: 491px;
@@ -32,11 +32,11 @@
   background-color: var(--white);
 }
 
-.horizontal-list li:last-child {
+.voices .horizontal-list li:last-child {
   margin-right: var(--space-6x);
 }
 
-.item .item-caption {
+.voices .item .item-caption {
   margin: var(--space-4x) var(--space-6x) 0 var(--space-6x);
   font-weight: bold;
   font-size: var(--font-4x);
@@ -45,7 +45,7 @@
   color: var(--purple);
 }
 
-.item .item-text {
+.voices .item .item-text {
   margin: var(--space-3x) var(--space-6x) 0 var(--space-6x);
   font-size: calc(3.75 * var(--font-unit));
   line-height: 160%;

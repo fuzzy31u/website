@@ -1,0 +1,79 @@
+/* horizontal-list */
+.programs {
+  margin-top: var(--space-4x);
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding-inline-start: 0px;
+  /* 以下、item間のスペースを削除するために設定 */
+  font-size: 0;
+  line-height: 0;
+}
+
+.programs .item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  height: 258px;
+  white-space: normal;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid var(--primary-color);
+}
+
+.programs .item:nth-child(1) {
+  margin-left: var(--space-4x);
+}
+
+.programs .item:nth-child(n+2) {
+  margin-left: var(--space-7x);
+}
+
+.programs .item:last-child {
+  margin-right: var(--space-4x);
+}
+
+.programs .item .item-caption-area {
+  border-radius: 4px 4px 0px 0px;
+  width: 280px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.programs .item .item-caption-area .item-caption {
+  margin-left: var(--space-4x);
+  margin-right: var(--space-4x);
+  font-weight: bold;
+  font-size: var(--font-4x);
+  line-height: 140%;
+  color: var(--white);
+}
+
+.programs .item .item-text {
+  margin: var(--space-4x) var(--space-4x) var(--space-10x) var(--space-4x);
+  font-size: calc(3.5 * var(--font-unit));
+  line-height: 160%;
+  color: var(--black-2);
+}
+
+.programs .item .item-text .program-emphasis {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.programs .item+.item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  bottom: 0px;
+  margin: auto;
+  width: 12px;
+  height: 28px;
+  background-image: url(./images/icon-gradation-next.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}

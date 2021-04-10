@@ -132,6 +132,10 @@ body {
   letter-spacing: 0.22em;
 }
 
+.contents-caption .main-captions {
+  margin-left: var(--space-4x);
+}
+
 .contents-caption .main-caption {
   font-weight: bold;
   font-size: var(--font-6x);
