@@ -36,6 +36,7 @@
 .curriculum-caption .captions {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-left: var(--space-4x);
   margin-right: var(--space-4x);
 }
