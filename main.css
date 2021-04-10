@@ -175,7 +175,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: var(--white);
-  background: linear-gradient(91.68deg, var(--primary-color) 0%, #5055CD 100%);
+  background: linear-gradient(91.68deg, var(--primary-color) 0%, var(--primary-color-2) 100%);
 }
 
 .primary-button .icon-next,
