@@ -1,0 +1,87 @@
+.price-contents {
+  overflow: hidden;
+  background-color: var(--gray);
+}
+
+.price-text {
+  margin: var(--space-5x) var(--space-6x) 0 var(--space-6x);
+  font-weight: bold;
+  font-size: calc(3.75 * var(--font-unit));
+  line-height: 160%;
+  color: var(--black-2);
+}
+
+.prices {
+  margin: var(--space-4x) var(--space-6x) 0 var(--space-6x);
+}
+
+.price {
+  text-align: center;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.price+.price {
+  margin-top: var(--space-4x)
+}
+
+.price-basics {
+  margin: var(--space-4x) auto var(--space-3x) auto;
+}
+
+.price-immersive {
+  margin: var(--space-4x) auto;
+}
+
+.price-caption {
+  font-weight: bold;
+  font-size: var(--font-5x);
+  color: var(--primary-color);
+}
+
+.price-body {
+  font-weight: bold;
+  font-size: calc(3.75 * var(--font-unit));
+  color: var(--primary-color);
+}
+
+.price-main {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--font-6x);
+}
+
+.price-braces {
+  font-weight: bold;
+  font-size: var(--font-3x);
+  color: var(--primary-color);
+}
+
+.price-campaign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-total {
+  margin: var(--space-6x) var(--space-6x) 0 var(--space-6x);
+  text-align: center;
+}
+
+.price-total hr {
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--primary-color);
+}
+
+.price-annotations {
+  margin: var(--space-6x);
+}
+
+.price-annotation {
+  font-size: var(--space-3x);
+  line-height: 160%;
+  color: var(--black-2);
+}
