@@ -98,6 +98,10 @@
   color: var(--black-2);
 }
 
+.table-annotations {
+  margin-top: var(--space-3x);
+}
+
 .table-annotation {
   font-size: var(--font-3x);
   line-height: 160%;
