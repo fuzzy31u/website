@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="skill.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="program.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="support.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="comparison.css" />
   </head>
   <body>
     <div class="header">
@@ -348,10 +349,10 @@
             </div>
           </div>
         </div>
-        <div class="box">
-          <img class="width-fill-image" src="images/img-counseling.png" width="375" height="546">
+        <div class="counseling">
+          <img class="counseling-image width-fill-image" src="./images/img-counseling.png" width="375" height="546">
           <div class="top-layer">
-            <div class="text-align-center margin-top-58">
+            <div class="concerns">
               <div class="flex-box-center-space-between margin-h-24">
                 <div class="flex-box-center-middle circle purple-2">
                   <p class="note-secondary">そもそも<br>エンジニアって<br>どんな風に<br>働くの？</p>
@@ -364,13 +365,12 @@
                 </div>
               </div>
             </div>
-            <p class="text-align-center caption1-lh140 margin-top-16">まずは<br>無料カウンセリングへ</p>
-            <p class="body-text-bold-lh160 margin-h-24 margin-top-12">Ms.Engineerでは受講前に必ず無料カウンセリングにて、コースや過去の受講者の方の事例を説明させていただきます。<br>また、ライフコーチがあなたにあったキャリアプランを一緒に立て、今後の受講スケジュールを計画します。</p>
-            <a class="secondary-button margin-top-24 margin-h-auto">
-              <p class="button-title-secondary">無料カウンセリングはこちら</p>
-              <img class="icon-next" src="./images/icon-next-primary-color.png" width="24" height="24">
+            <p class="concerns-caption">エントリーを<br>迷われている方へ</p>
+            <p class="concerns-message">メールまたは公式LINEで受講に関する相談を受け付けています。ご不安な点や気になることがあればお気軽にお問い合わせください</p>
+            <a class="mail-inquiry-button">
+              <p class="button-title">メールで質問する</p>
             </a>
-          </div>
+            </div>
         </div>
       </div>
 
@@ -380,41 +380,45 @@
           <p class="sub-caption">COMPARISON</p>
           <div class="main-captions">
             <h2 class="main-caption">他社比較</h2>
-            <p class="body-text margin-top-16">Ms.Engineerは一般的なプログラミングスクールに比べると授業料は一見高額ですが、シリコンバレーで認められたカリキュラムを受講することでプログラムを書けるようになることはもちろん、将来的に世界で通用する技術をみにつけていくための素養となるコンピューターサイエンス（CS）を学ぶことができます。</p>
+            <p class="explanation">Ms.Engineerは一般的なプログラミングスクールに比べると授業料は一見高額ですが、シリコンバレーで認められたカリキュラムを受講することでプログラムを書けるようになることはもちろん、将来的に世界で通用する技術をみにつけていくための素養となるコンピューターサイエンス（CS）を学ぶことができます。</p>
           </div>
         </div>
-        <table class="comparison-table margin-h-auto margin-top-24">
-          <tr>
-            <th></th>
-            <th class="caption3-white primary-color">Ms.Engineer</th>
-            <th class="caption4-white text-align-center black-bright-2">一般的な<br>プログラミングスクール</th>
-          </tr>
-          <tr>
-            <th>CS</th>
-            <td><p class="table-caption text-align-center">◯</p></td>
-            <td><p class="table-caption text-align-center">△</p><p class="table-note">一般的なプログラミングスクールのカリキュラムに、コンピューターサイエンスが含まれていることは稀です。</p></td>
-          </tr>
-          <tr>
-            <th>授業料</th>
-            <td class="text-align-center">130万円</td>
-            <td class="text-align-center">50〜70万円</td>
-          </tr>
-          <tr>
-            <th>目指せる年収レベル</th>
-            <td class="text-align-center">〜2000万円</td>
-            <td class="text-align-center">〜600万円</td>
-          </tr>
-          <tr>
-            <th>技術力</th>
-            <td>アルゴリズム設計〜アプリケーションの実装まで例）配車サービス（Uber等）の最短ルートの検索</td>
-            <td>アプリケーションの実装</td>
-          </tr>
-          <tr>
-            <th>目指せる就職先</th>
-            <td>Google, Apple, Facebook, Amazon, Microsoft等<br>※以上の企業ではコンピューターサイエンスの学士号または同等の実務経験を必須条件としています</td>
-            <td>日系IT企業</td>
-          </tr>
-        </table>
+        <div class="comparison-contents">
+          <table class="comparison-table">
+            <tr>
+              <th></th>
+              <th>Ms.Engineer</th>
+              <th>一般的な<br>プログラミングスクール</th>
+            </tr>
+            <tr>
+              <th>コンピューターサイエンス</th>
+              <td><p class="table-caption">◯</p></td>
+              <td><p class="table-caption">△</p><p>一般的なプログラミングスクールのカリキュラムに、コンピューターサイエンスが含まれていることは稀です。</p></td>
+            </tr>
+            <tr>
+              <th>授業料</th>
+              <td>130万円</td>
+              <td>50〜70万円</td>
+            </tr>
+            <tr>
+              <th>目指せる年収レベル</th>
+              <td>〜2000万円</td>
+              <td>〜600万円</td>
+            </tr>
+            <tr>
+              <th>技術力</th>
+              <td>アルゴリズム設計〜アプリケーションの実装まで例）配車サービス（Uber等）の最短ルートの検索</td>
+              <td>アプリケーションの実装</td>
+            </tr>
+            <tr>
+              <th>目指せる就職先</th>
+              <td>Google, Apple, Facebook, Amazon, Microsoft等 ※2</td>
+              <td>日系IT企業</td>
+            </tr>
+          </table>
+          <p class="table-annotation">※1 熟練したエンジニアの年収レベルであり、卒業直後から得られるものではありません。</p>
+          <p class="table-annotation">※2 コンピューターサイエンスの学士号または同等の実務経験を必須条件としています</p>
+        </div>
       </div>
 
       <!-- 価格について -->

@@ -58,3 +58,52 @@
   line-height: 160%;
   color: #FFFFFF;
 }
+
+.counseling {
+  position: relative;
+}
+
+.counseling-image {
+  width: 100%;
+  height: auto;
+}
+
+.concerns {
+  margin-top: calc(14.5 * var(--space-unit));
+  text-align: center;  
+}
+
+.concerns-caption {
+  margin-top: var(--space-4x);
+  font-weight: bold;
+  font-size: var(--font-6x);
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: var(--black);
+}
+
+.concerns-message {
+  margin: var(--space-3x) var(--space-6x) 0 var(--space-6x);
+  font-weight: bold;
+  font-size: calc(3.75 * var(--font-unit));
+  line-height: 160%;
+  color: var(--black-2);
+}
+
+.mail-inquiry-button {
+  margin: var(--space-6x) auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 327px;
+  border-radius: 4px;
+  background-color: var(--navy);
+}
+
+.mail-inquiry-button .button-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--white);
+}
