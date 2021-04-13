@@ -226,21 +226,3 @@ body {
   width: 147px;
   height: 96px;
 }
-
-/* アコーディオンボタン（開閉ボタン） */
-.acd-check {
-  display: none;
-}
-
-.acd-content {
-  height: 0;
-  opacity: 0;
-  transition: .5s;
-  visibility: hidden;
-}
-
-.acd-check:checked + #acd-label + .acd-content {
-  height: auto;
-  opacity: 1;
-  visibility: visible;
-}

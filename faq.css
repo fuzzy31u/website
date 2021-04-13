@@ -1,0 +1,78 @@
+
+.faq-contents {
+  margin: var(--space-6x) var(--space-6x) 0 var(--space-6x)
+}
+
+.faq {
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid var(--primary-color);
+}
+
+.faq-body {
+  margin: var(--space-3x) var(--space-4x) var(--space-3x) var(--space-4x)
+}
+
+/* アコーディオンボタン（開閉ボタン） */
+.acd-check {
+  display: none;
+}
+
+.acd-content {
+  height: 0;
+  opacity: 0;
+  transition: .5s;
+  visibility: hidden;
+}
+
+.acd-check:checked + #acd-label + .acd-content {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.question-body,
+.answer-body {
+  display: flex;
+  align-items: start;
+}
+
+.answer-body {
+  margin-top: var(--space-3x);
+}
+
+.question-label,
+.answer-label {
+  font-weight: bold;
+  font-size: var(--font-5x);
+  letter-spacing: 0.1em;
+}
+
+.question-label {
+  color: var(--primary-color);
+}
+
+.answer-label {
+  color: var(--black-2);
+}
+
+.question,
+.answer {
+  margin-left: var(--space-2x);
+}
+
+.question {
+  font-weight: bold;
+  font-size: var(--space-4x);
+  line-height: 140%;
+  color: var(--black-2);
+}
+
+.answer {
+  font-size: calc(3.75 * var(--font-unit));
+  line-height: 140%;
+  color: var(--black-2);
+}
+
+.faq+.faq{
+  margin-top: var(--space-3x)
+}
