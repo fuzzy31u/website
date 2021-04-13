@@ -45,15 +45,14 @@
   font-size: calc(3.75 * var(--font-unit));
 }
 
-#top-contents .entry-button {
+#top .entry-button {
   margin: var(--space-3x) auto 0 auto
 }
 
-.dead-line {
+#top .dead-line {
   margin-top: var(--space-3x);
   font-weight: bold;
   font-size: var(--font-3x);
-  text-align: center;
   text-align: center;
   color: var(--black);
 }

@@ -76,3 +76,15 @@
 .faq+.faq{
   margin-top: var(--space-3x)
 }
+
+#faq .entry-button {
+  margin: calc(13.5 * var(--space-unit)) auto 0 auto
+}
+
+#faq .dead-line {
+  margin-top: var(--space-3x);
+  font-weight: bold;
+  font-size: var(--font-3x);
+  text-align: center;
+  color: var(--black);
+}
