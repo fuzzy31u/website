@@ -57,7 +57,7 @@
 
 .question,
 .answer {
-  margin-left: var(--space-2x);
+  margin: auto 0 auto var(--space-2x);
 }
 
 .question {
