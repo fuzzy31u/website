@@ -41,12 +41,14 @@
 }
 
 .price-body {
+  margin-top: var(--space-2x);
   font-weight: bold;
   font-size: calc(3.75 * var(--font-unit));
   color: var(--primary-color);
 }
 
 .price-main {
+  margin-right: calc(0.5 * var(--space-unit));
   font-family: Avenir Next;
   font-style: normal;
   font-weight: 600;
@@ -60,6 +62,7 @@
 }
 
 .price-campaign {
+  margin-top: var(--space-2x);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,6 +74,7 @@
 }
 
 .price-total hr {
+  margin-top: var(--space-3x);
   border-width: 2px 0px 0px 0px;
   border-style: solid;
   border-color: var(--primary-color);
@@ -84,4 +88,75 @@
   font-size: var(--space-3x);
   line-height: 160%;
   color: var(--black-2);
+}
+
+.price-body-box {
+  margin-top: var(--space-2x);
+  display: inline-block;
+  position: relative;
+}
+
+.price-strikethrough {
+  position: absolute;
+  width: 110%;
+  top: 50%;
+  left: -5%;
+  border: 1px solid var(--primary-color);
+}
+
+.campaign-label {
+  border-radius: 16px;
+  background-color: var(--red);
+}
+
+.campaign-caption {
+  margin: var(--space-1x) var(--space-4x);
+  font-weight: bold;
+  font-size: var(--font-4x);
+  line-height: 100%;
+  color: var(--white);
+}
+
+.campagin-price {
+  margin-left: var(--space-2x);
+  font-weight: bold;
+  font-size: var(--font-4xh);
+  line-height: 100%;
+  color: var(--red);
+}
+
+.campagin-price-emphasis {
+  font-size: var(--font-8x);
+}
+
+.price-total-body {
+  font-weight: bold;
+  font-size: var(--font-4x);
+  line-height: 120%;
+  color: var(--black-2);
+}
+
+.price-total-emphasis {
+  margin-left: var(--space-2x);
+  font-family: Avenir Next;
+  font-weight: 600;
+  font-size: var(--font-7x);
+  line-height: 100%;
+  text-align: right;
+}
+
+.price-total-sub-emphasis {
+  margin-left: calc(0.5 * var(--space-unit));
+  font-size: var(--font-5x);
+  line-height: 100%;
+}
+
+.price-total-weakness {
+  margin-left: calc(0.5 * var(--space-unit));
+  font-size: var(--font-3x);
+  line-height: 100%;
+}
+
+.price-total-head {
+  vertical-align: text-bottom;
 }
