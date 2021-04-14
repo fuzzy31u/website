@@ -39,7 +39,7 @@
   font-weight: bold;
   font-size: var(--font-4xh);
   line-height: 160%;
-  color: #222222;
+  color: var(--black-2);
 }
 
 .comment-body {
