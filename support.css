@@ -73,6 +73,13 @@
   text-align: center;  
 }
 
+.concern {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: var(--font-3x);
+  line-height: 140%;
+}
+
 .concerns-caption {
   margin-top: var(--space-4x);
   font-weight: bold;

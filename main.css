@@ -190,6 +190,13 @@ body {
   margin-bottom: auto;
 }
 
+.button-title {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+}
+
 .secondary-button {
   display: flex;
   align-items: center;
