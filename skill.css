@@ -1,0 +1,48 @@
+.skills {
+  margin: var(--space-6x) var(--space-4x) 0 var(--space-4x)
+}
+
+.skill {
+  overflow: hidden;
+  background-color: var(--purple-6);
+  border-radius: 4px;
+}
+
+.skill-caption {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: var(--space-1x) var(--space-2x) 0 var(--space-4x);
+}
+
+.skill-caption .caption-main {
+  font-weight: bold;
+  font-size: var(--font-4x);
+  line-height: 140%;
+  background: linear-gradient(91.68deg, var(--primary-color) 0%, var(--primary-color-2) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.skill-caption .caption-sub,
+.skill-caption .caption-sub .number {
+  font-family: Noto Serif JP;
+  font-weight: bold;
+  font-size: var(--font-6x);
+  color: #D8DDEE;
+}
+
+.skill-caption .caption-sub .number {
+  font-size: calc(8.5 * var(--font-unit));
+}
+
+.skill-explanation {
+  margin: var(--space-1x) var(--space-4x) var(--space-4x) var(--space-4x);
+  font-size: var(--font-3xh);
+  line-height: 160%;
+  color: var(--black-2);
+}
+
+.skills .skill:nth-child(n+2) {
+  margin-top: var(--space-3x);
+}

@@ -1,0 +1,109 @@
+.appeal {
+  margin-top: var(--space-1x);
+  /* position: relative; */
+  width: fit-content;
+  font-weight: bold;
+  font-size: var(--font-4x);
+  letter-spacing: 0.1em;
+  color: var(--orange);
+  border-bottom: solid 2px var(--orange);
+}
+
+.appeal>.point {
+  font-size: calc(6.5 * var(--font-unit));
+}
+
+.appeal::after {
+  content: "※";
+  vertical-align: super;
+  font-weight: bold;
+  font-size: var(--font-3x);
+  color: var(--orange);
+}
+
+.supports {
+  margin-top: var(--space-6x);
+}
+
+.supports .support:nth-child(n+2) {
+  margin-top: var(--space-6x);
+}
+
+.supports .support:nth-child(2n+1) .image-align {
+  text-align: right;
+}
+
+.supports .support:nth-child(2n) .image-align {
+  text-align: left;
+}
+
+.support-content {
+  margin-top: calc(-1 * 10.5 * var(--space-unit));
+  overflow: hidden;
+  background: linear-gradient(244.5deg, #7A47AC 0%, #5857B5 100%);
+}
+
+.support-caption {
+  margin: calc(18 * var(--space-unit)) var(--space-6x) 0 var(--space-6x);
+  font-weight: bold;
+  font-size: var(--font-5x);
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: var(--white);
+}
+
+.support-explanation {
+  margin: var(--space-3x) var(--space-6x) var(--space-6x) var(--space-6x);
+  font-size: calc(3.75 * var(--font-unit));
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+.counseling {
+  position: relative;
+}
+
+.counseling-image {
+  width: 100%;
+  height: auto;
+}
+
+.concerns {
+  margin-top: calc(14.5 * var(--space-unit));
+  text-align: center;  
+}
+
+.concerns-caption {
+  margin-top: var(--space-4x);
+  font-weight: bold;
+  font-size: var(--font-6x);
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: var(--black);
+}
+
+.concerns-message {
+  margin: var(--space-3x) var(--space-6x) 0 var(--space-6x);
+  font-weight: bold;
+  font-size: calc(3.75 * var(--font-unit));
+  line-height: 160%;
+  color: var(--black-2);
+}
+
+.mail-inquiry-button {
+  margin: var(--space-6x) auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 327px;
+  border-radius: 4px;
+  background-color: var(--navy);
+}
+
+.mail-inquiry-button .button-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--white);
+}
