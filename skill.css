@@ -29,6 +29,7 @@
   font-family: Noto Serif JP;
   font-weight: bold;
   font-size: var(--font-6x);
+  line-height: 100%;
   color: #D8DDEE;
 }
 
