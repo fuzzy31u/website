@@ -55,6 +55,7 @@
   font-weight: bold;
   font-size: var(--font-6x);
   text-align: right;
+  line-height: 100%;
   color: var(--white);
   opacity: 0.3;
 }
