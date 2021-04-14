@@ -38,6 +38,13 @@
   line-height: 160%;
 }
 
+.comment-body {
+  margin: 0 calc(1.5 * var(--space-unit));
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: calc(3.75 * var(--font-unit));
+}
+
 .entry-button-comment {
   margin-top: var(--space-4x);
   text-align: center;
