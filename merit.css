@@ -28,8 +28,11 @@
   overflow: hidden;
 }
 
+.merit-contents {
+  margin: var(--space-6x);
+}
+
 .merit-captions {
-  margin: calc(6.5 * var(--space-unit)) var(--space-6x) 0 var(--space-6x);
   display: flex;
   align-items: center;
 }
@@ -43,7 +46,7 @@
 }
 
 .merit-body {
-  margin: var(--space-4x) var(--space-6x) 0 var(--space-6x);
+  margin-top: var(--space-4x);
   font-size: 15px;
   line-height: 160%;
   color: var(--black-2);
@@ -51,4 +54,128 @@
 
 .merit-emphasis {
   font-weight: bold;
+}
+
+.nomad-worker,
+.engineer-shortage {
+  margin-top: var(--space-4x);
+  text-align: center;
+}
+
+.merit-reference {
+  font-size: var(--font-3x);
+  line-height: 160%;
+  color: var(--black-2);
+}
+
+.engineer-shortage+.merit-reference {
+  margin-top: var(--space-3x);
+}
+
+#work-style+.merit-reference {
+  margin-top: var(--space-4x);
+}
+
+.income-before-after {
+  margin-top: var(--space-4x);
+  text-align: center;
+}
+
+.income-before,
+.income-after {
+  background-color: var(--white);
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.before-label,
+.after-label {
+  display: inline-block;
+  border-radius: 4px 0px 4px 0px;
+  overflow: hidden;
+}
+
+.before-label {
+  background-color: var(--black-4);
+}
+
+.after-label {
+  background-color: var(--primary-color);
+}
+
+.label-caption {
+  margin: var(--space-1x) var(--space-2x);
+  font-weight: 600;
+  font-size: var(--font-3x);
+  color: var(--white);
+}
+
+.contens-before,
+.contens-after {
+  margin: calc(0.5 * var(--space-unit)) 0 var(--space-3x) 0;
+  text-align: center;
+}
+
+.contens-before p+p {
+  margin-top: var(--space-2x);
+}
+
+.contens-after p+p {
+  margin-top: var(--space-3x);
+}
+
+.sub-caption-before,
+.sub-caption-after {
+  font-weight: bold;
+  font-size: var(--font-3xh);
+}
+
+.sub-caption-before {
+  color: var(--black-4);
+}
+
+.sub-caption-after {
+  color: #6121A1;
+}
+
+.main-before,
+.main-after {
+  font-weight: bold;
+  font-size: var(--font-5x);
+  line-height: 160%;
+}
+
+.main-before {
+  color: var(--black-4);
+}
+
+.main-after {
+  color: var(--primary-color);
+}
+
+.main-before-emphasis,
+.main-after-emphasis {
+  font-family: Avenir Next;
+  font-weight: 600;
+}
+
+.main-before-emphasis {
+  font-size: var(--font-7x);
+}
+
+.main-after-emphasis {
+  font-size: var(--font-9x);
+  color: var(--primary-color);
+}
+
+.income-reference {
+  font-weight: 500;
+  font-size: calc(2.75 * var(--font-unit));
+  line-height: 160%;
+  color: var(--black-4);
+}
+
+.income-icon-next {
+  margin: 4 0;
 }
