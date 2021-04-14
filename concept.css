@@ -1,0 +1,46 @@
+#concept {
+  position: relative;
+}
+
+.concept-image {
+  width: 100%;
+  height: auto;
+}
+
+#concept .main-caption {
+  color: var(--white);
+}
+
+#concept .contents-caption {
+  margin-top: calc(14 * var(--space-unit));
+}
+
+.messages {
+  margin: var(--space-2x) var(--space-6x) 0 var(--space-6x)
+}
+
+.message {
+  font-weight: bold;
+  font-size: calc(3.75 * var(--font-unit));
+  line-height: 180%;
+  color: var(--white);
+}
+
+.ms-engineer-title,
+.sign {
+  font-weight: bold;
+  color: var(--white);
+  line-height: 180%;
+}
+
+.ms-engineer-title {
+  font-size: var(--font-3x);
+}
+
+.signs {
+  margin-top: var(--space-10x)
+}
+
+.sign {
+  font-size: calc(3.75 * var(--font-unit));
+}
