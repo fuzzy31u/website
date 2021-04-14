@@ -4,6 +4,7 @@
   width: fit-content;
   font-weight: bold;
   font-size: var(--font-4x);
+  line-height: 100%;
   letter-spacing: 0.1em;
   color: var(--orange);
   border-bottom: solid 2px var(--orange);
@@ -18,6 +19,7 @@
   vertical-align: super;
   font-weight: bold;
   font-size: var(--font-3x);
+  line-height: 100%;
   color: var(--orange);
 }
 
@@ -73,6 +75,21 @@
   text-align: center;  
 }
 
+.concern-contens {
+  margin-left: var(--space-6x);
+  margin-right: var(--space-6x);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.concern {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: var(--font-3x);
+  line-height: 140%;
+}
+
 .concerns-caption {
   margin-top: var(--space-4x);
   font-weight: bold;
@@ -106,4 +123,10 @@
   font-weight: bold;
   font-size: 16px;
   color: var(--white);
+}
+
+.circle {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
 }

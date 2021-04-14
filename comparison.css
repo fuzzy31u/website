@@ -26,6 +26,7 @@
   background: var(--primary-color);
   font-weight: bold;
   font-size: var(--font-4x);
+  line-height: 100%;
   color: var(--white);
 }
 
@@ -52,6 +53,7 @@
   font-weight: bold;
   font-size: var(--font-4x);
   text-align: center;
+  line-height: 100%;
   color: var(--purple);
 }
 
@@ -59,6 +61,7 @@
   content: "※1";
   font-weight: bold;
   font-size: var(--font-3x);
+  line-height: 100%;
   vertical-align: top;
 }
 
@@ -80,6 +83,7 @@
 .comparison-table tr:nth-child(n+3):nth-child(-n+4) td:nth-child(3) {
   font-size: var(--font-4x);
   text-align: center;
+  line-height: 100%;
   color: var(--black-2);
 }
 
@@ -95,6 +99,7 @@
   font-family: Noto Sans JP;
   font-weight: bold;
   font-size: 14px;
+  line-height: 100%;
   color: var(--black-2);
 }
 

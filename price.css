@@ -38,6 +38,7 @@
 .price-caption {
   font-weight: bold;
   font-size: var(--font-5x);
+  line-height: 100%;
   color: var(--primary-color);
 }
 
@@ -45,6 +46,7 @@
   margin-top: var(--space-2x);
   font-weight: bold;
   font-size: calc(3.75 * var(--font-unit));
+  line-height: 100%;
   color: var(--primary-color);
 }
 
@@ -54,12 +56,14 @@
   font-style: normal;
   font-weight: 600;
   font-size: var(--font-6x);
+  line-height: 100%;
 }
 
 .price-braces {
   font-weight: bold;
   font-size: var(--font-3x);
   color: var(--primary-color);
+  line-height: 100%;
 }
 
 .price-campaign {

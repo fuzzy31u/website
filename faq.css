@@ -44,6 +44,7 @@
 .answer-label {
   font-weight: bold;
   font-size: var(--font-5x);
+  line-height: 100%;
   letter-spacing: 0.1em;
 }
 
@@ -86,5 +87,6 @@
   font-weight: bold;
   font-size: var(--font-3x);
   text-align: center;
+  line-height: 100%;
   color: var(--black);
 }

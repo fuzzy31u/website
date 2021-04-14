@@ -108,6 +108,7 @@
   margin: var(--space-1x) var(--space-2x);
   font-weight: 600;
   font-size: var(--font-3x);
+  line-height: 100%;
   color: var(--white);
 }
 
@@ -129,6 +130,7 @@
 .sub-caption-after {
   font-weight: bold;
   font-size: var(--font-3xh);
+  line-height: 100%;
 }
 
 .sub-caption-before {
