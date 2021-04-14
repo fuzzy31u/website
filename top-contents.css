@@ -1,3 +1,7 @@
+.top-contents-box {
+  position: relative;
+}
+
 .message-on-img-woman {
   position: absolute;
   left: var(--space-6x);

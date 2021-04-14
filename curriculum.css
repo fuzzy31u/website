@@ -73,3 +73,7 @@
 .curriculums .curriculum:nth-child(2) .curriculum-explanation {
   color: var(--secondary-color);
 }
+
+.marker-yellow {
+  background: linear-gradient(transparent 0%, #FFF38A 0%);
+}

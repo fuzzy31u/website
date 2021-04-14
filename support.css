@@ -122,3 +122,9 @@
   font-size: 16px;
   color: var(--white);
 }
+
+.circle {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+}
