@@ -73,6 +73,14 @@
   text-align: center;  
 }
 
+.concern-contens {
+  margin-left: var(--space-6x);
+  margin-right: var(--space-6x);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .concern {
   color: var(--secondary-color);
   font-weight: bold;
