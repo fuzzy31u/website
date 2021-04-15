@@ -51,18 +51,104 @@ body {
 
 /* specific class */
 /* header */
-.header {
-  height: 56px;
-  width: 100%;
-}
+@media screen and (max-width: 767px) {
+  .header-sp {
+    height: 56px;
+    width: 100%;
+  }
 
-.header .header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  margin-left: 16px;
-  margin-right: 16px;
+  .header-pc {
+    display: none !important;
+  }
+
+  .header-content-sp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-sp {
+    display: none !important;
+  }
+
+  .header-pc {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-ms-engineer-l {
+    margin-left: 7.5%;
+  }
+
+  .header-links {
+    display: flex;
+    margin-left: 11%;
+  }
+
+  .header-link {
+    text-decoration: none;
+  }
+
+  .header-link+.header-link {
+    margin-left: var(--space-8x);
+  }
+
+  .header-link-caption,
+  .header-link-sub-caption {
+    line-height: 100%;
+    text-align: center;
+    color: var(--black);
+  }
+
+  .header-link-caption {
+    font-family: Avenir Next;
+    font-weight: 600;
+    font-size: var(--font-4x);
+    letter-spacing: 0.08em;
+  }
+
+  .header-link-sub-caption {
+    margin-top: var(--space-1x);
+    font-weight: 500;
+    font-size: calc(2.75 * var(--font-unit));
+   }
+
+   .header-entry-button {
+    margin-left: 2.5%;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 206px;
+    border-radius:4px;
+    text-decoration: none;
+    color: var(--white);
+    background: linear-gradient(91.68deg, var(--primary-color) 0%, var(--primary-color-2) 100%);
+  }
+
+  .header-entry-button-titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: var(--space-4x);
+  }
+
+  .header-entry-button .icon-next {
+    margin-left: calc(2.5 * var(--space-unit));
+  }
+
+  .header-button-title {
+    font-weight: bold;
+    font-size: var(--font-3xh);
+    line-height: 100%;
+    text-align: center;
+    color: var(--white);
+  }
 }
 
 /* contents */
