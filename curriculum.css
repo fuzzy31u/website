@@ -25,11 +25,32 @@
 }
 
 .curriculums {
-  margin: var(--space-4x) var(--space-4x) 0 var(--space-4x)
+  margin-top: var(--space-4x);
+  margin-left: var(--space-4x);
+  margin-right: var(--space-4x);
+  display: flex;
+  flex-flow: column;
+}
+@media screen and (min-width: 768px) {
+  .curriculums {
+    margin-top: var(--space-3x);
+    margin-left: 16%;
+    margin-right: 16%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 }
 
 .curriculum {
   border-radius: 4px 4px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .curriculum {
+    display: flex;
+    flex-flow: column;
+    justify-content: stretch;
+    width: 47%;
+  }
 }
 
 .curriculums .curriculum:nth-child(1) {
@@ -37,8 +58,13 @@
 }
 
 .curriculums .curriculum:nth-child(2) {
-  margin-top: var(--space-4x);
   border: 1px solid var(--secondary-color);
+}
+
+@media screen and (max-width: 767px) {
+  .curriculum+.curriculum {
+    margin-top: var(--space-4x);
+  }
 }
 
 .curriculum-caption {
@@ -81,7 +107,15 @@
   opacity: 0.3;
 }
 
-.curriculum .curriculum-explanation {
+@media screen and (min-width: 768px) {
+  .curriculums .curriculum .curriculum-explanation-box {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+}
+
+.curriculum .curriculum-explanation-box .curriculum-explanation {
   margin: var(--space-4x);
   font-weight: bold;
   font-size: var(--font-4x);
@@ -94,6 +128,11 @@
 
 .curriculums .curriculum:nth-child(2) .curriculum-explanation {
   color: var(--secondary-color);
+}
+@media screen and (max-width: 767px) {
+  .curriculums .curriculum:nth-child(2) .curriculum-explanation {
+    margin-bottom: calc(10.5 * var(--space-unit));
+  }
 }
 
 .marker-yellow {
