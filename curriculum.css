@@ -1,3 +1,24 @@
+.curriculum-captions-box {
+  display: flex;
+  flex-flow: column;
+}
+@media screen and (min-width: 768px) {
+  .curriculum-captions-box {
+    margin-left: 16%;
+    margin-right: 16%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .curriculum-captions-box .contents-caption {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 70%;
+  }
+}
+
 .curriculum-provider-logo {
   margin-top: var(--space-2x);
   text-align: center;
