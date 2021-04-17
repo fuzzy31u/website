@@ -4,6 +4,12 @@
   height: 515px;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .voices {
+    margin-top: var(--space-8x);
+    height: 532px;
+  }
+}
 
 .gradiention-rect {
   position: absolute;
@@ -14,6 +20,12 @@
   background: linear-gradient(240.91deg, #7A47AC 5.1%, #5857B5 100%);
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .gradiention-rect {
+    height: 508px;
+    background: linear-gradient(91.68deg, #6121A1 0%, #5055CD 100%);
+  }
+}
 
 /* horizontal-list */
 .voices .horizontal-list {
@@ -21,6 +33,11 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   padding-inline-start: 0px;
+}
+@media screen and (min-width: 768px) {
+  .voices .horizontal-list {
+    padding-inline-start: 18%;
+  }
 }
 
 .voices .horizontal-list .item {
@@ -31,13 +48,21 @@
   margin-left: var(--space-6x);
   background-color: var(--white);
 }
+@media screen and (min-width: 768px) {
+  .voices .horizontal-list .item {
+    width: 320px;
+  }
+}
 
 .voices .horizontal-list li:last-child {
   margin-right: var(--space-6x);
 }
 
-.voices .item .item-caption {
+.voices .item .item-texts {
   margin: var(--space-4x) var(--space-6x) 0 var(--space-6x);
+}
+
+.voices .item .item-texts .item-caption {
   font-weight: bold;
   font-size: var(--font-4x);
   line-height: 140%;
@@ -45,8 +70,8 @@
   color: var(--purple);
 }
 
-.voices .item .item-text {
-  margin: var(--space-3x) var(--space-6x) 0 var(--space-6x);
+.voices .item .item-texts .item-text {
+  margin-top: var(--space-3x);
   font-size: calc(3.75 * var(--font-unit));
   line-height: 160%;
   letter-spacing: 0.1em;
