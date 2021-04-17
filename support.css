@@ -25,6 +25,24 @@
 .supports {
   margin-top: var(--space-6x);
 }
+@media screen and (min-width: 768px) {
+  .supports {
+    margin-left: var(--space-h-pc);
+    margin-right: var(--space-h-pc);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .support {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .supports .support:nth-child(2n+1) {
+    flex-direction: row-reverse;
+  }
+}
 
 .supports .support:nth-child(n+2) {
   margin-top: var(--space-6x);
@@ -38,14 +56,30 @@
   text-align: left;
 }
 
-.support-content {
+.support-content-box {
   margin-top: calc(-1 * 10.5 * var(--space-unit));
   overflow: hidden;
   background: linear-gradient(244.5deg, #7A47AC 0%, #5857B5 100%);
 }
+@media screen and (min-width: 768px) {
+  .support-content-box {
+    margin-top: var(--space-5x);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
+
+.support-content {
+  margin: calc(18 * var(--space-unit)) var(--space-6x) var(--space-6x) var(--space-6x);
+}
+@media screen and (min-width: 768px) {
+  .support-content {
+    margin: 0 6%;
+  }
+}
 
 .support-caption {
-  margin: calc(18 * var(--space-unit)) var(--space-6x) 0 var(--space-6x);
   font-weight: bold;
   font-size: var(--font-5x);
   line-height: 140%;
@@ -54,7 +88,7 @@
 }
 
 .support-explanation {
-  margin: var(--space-3x) var(--space-6x) var(--space-6x) var(--space-6x);
+  margin-top: var(--space-3x);
   font-size: calc(3.75 * var(--font-unit));
   line-height: 160%;
   color: #FFFFFF;

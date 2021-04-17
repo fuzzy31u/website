@@ -20,4 +20,6 @@
   --space-18x: calc(18 * var(--space-unit));
   --space-19x: calc(19 * var(--space-unit));
   --space-20x: calc(20 * var(--space-unit));
+
+  --space-h-pc: 16%;
 }
