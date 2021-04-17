@@ -1,31 +1,59 @@
 .merits {
-  margin-top: calc(6.5 * var(--space-unit))
+  margin: calc(6.5 * var(--space-unit)) var(--space-4x) 0 var(--space-4x);
+  display: flex;
+  flex-flow: column;
 }
-
-.merits>div:nth-child(1) {
-  background-color: var(--purple-1);
-}
-
-.merits>div:nth-child(2) {
-  background-color: var(--purple-2);
-}
-
-.merits>div:nth-child(3) {
-  background-color: var(--purple-3);
-}
-
-.merits>div:nth-child(4) {
-  background-color: var(--purple-4);
-}
-
-.merits>div:nth-child(n+2):nth-child(-n+4) {
-  margin-top: var(--space-4x);
+@media screen and (min-width: 768px) {
+  .merits {
+    margin: var(--space-8x) auto 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 68%;
+  }
 }
 
 .merit {
-  margin-left: var(--space-4x);
-  margin-right: var(--space-4x);
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .merit {
+    width: 47.5%;
+  }
+}
+
+.merits>.merit:nth-child(1) {
+  background-color: var(--purple-1);
+}
+
+.merits>.merit:nth-child(2) {
+  background-color: var(--purple-2);
+}
+
+.merits>.merit:nth-child(3) {
+  background-color: var(--purple-3);
+}
+
+.merits>.merit:nth-child(4) {
+  background-color: var(--purple-4);
+}
+
+@media screen and (max-width: 767px) {
+  .merit+.merit {
+    margin-top: var(--space-4x);    
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .merits>.merit:nth-child(n+1):nth-child(-n+2) {
+    height: 530px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .merits>.merit:nth-child(n+3):nth-child(-n+4) {
+    margin-top: 5%;
+    height: 453px;
+  }
 }
 
 .merit-contents {
@@ -60,6 +88,13 @@
 .engineer-shortage {
   margin-top: var(--space-4x);
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .img-engineer-shortage {
+    width: 64%;
+    height: auto;
+  }
 }
 
 .merit-reference {
