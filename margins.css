@@ -10,5 +10,14 @@
   --space-8x: calc(8 * var(--space-unit));
   --space-9x: calc(9 * var(--space-unit));
   --space-10x: calc(10 * var(--space-unit));
+  --space-11x: calc(11 * var(--space-unit));
+  --space-12x: calc(12 * var(--space-unit));
+  --space-13x: calc(13 * var(--space-unit));
+  --space-14x: calc(14 * var(--space-unit));
+  --space-15x: calc(15 * var(--space-unit));
+  --space-16x: calc(16 * var(--space-unit));
+  --space-17x: calc(17 * var(--space-unit));
+  --space-18x: calc(18 * var(--space-unit));
+  --space-19x: calc(19 * var(--space-unit));
   --space-20x: calc(20 * var(--space-unit));
 }

@@ -112,8 +112,14 @@
   position: relative;
   margin-top: var(--space-6x);
 }
+@media screen and (min-width: 768px) {
+  .closing-word-box {
+    margin-top: var(--space-20x);
+    text-align: right;
+  }
+}
 
-.img-woman-02 {
+.img-woman-02-sp {
   position: absolute;
   top: 216px;
   right: 0px;
@@ -121,19 +127,53 @@
   height: 286px;
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .img-woman-02-sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .img-woman-02-pc {
+    display: none;
+  }
+}
+
+.closing-words {
+  margin: 0 var(--space-6x);
+}
+@media screen and (min-width: 768px) {
+  .closing-words {
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 16%;
+    text-align: left;
+  }
+}
 
 .closing-caption {
-  margin: var(--space-6x) var(--space-6x) 0 var(--space-6x);
   font-weight: bold;
   font-size: var(--font-5x);
   line-height: 160%;
   color: var(--black-2);
 }
+@media screen and (min-width: 768px) {
+  .closing-caption {
+    font-size: var(--font-8x);
+  }
+}
 
 .closing-word {
-  margin: var(--space-4x) var(--space-6x) 0 var(--space-6x);
+  margin-top: var(--space-4x);
   font-weight: bold;
   font-size: calc(3.75 * var(--font-unit));
   line-height: 200%;
   color: var(--black-2);
+}
+@media screen and (min-width: 768px) {
+  .closing-word {
+    margin-top: var(--space-12x);
+    font-size: var(--font-5x);
+    }
 }
