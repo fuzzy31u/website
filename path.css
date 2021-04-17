@@ -1,31 +1,28 @@
 .partners {
-  margin-top: var(--space-5x);
+  margin: var(--space-5x) var(--space-5x) 0 var(--space-5x);
+  display: flex;
+  flex-flow: row wrap;
+  height: 189px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .partners {
+    margin: var(--space-4x) auto 0 auto;
+    width: 63%;
+    height: auto;
+  }
 }
 
-.logo-mercari {
-  margin-left: calc(0.75 * var(--space-unit));
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 33%;
 }
-
-.logo-SONY {
-  margin-left: calc(1.5 * var(--space-unit));
-}
-
-.logo-IBM {
-  margin-left: calc(15 * var(--space-unit));
-}
-
-.logo-LINE {
-  margin-left: calc(4.5 * var(--space-unit));
-}
-
-.logo-Rakuten {
-  margin-left: calc(15 * var(--space-unit));
-}
-
-.partners .row-2 {
-  margin-top: var(--space-4x);
-}
-
-.partners .row-3 {
-  margin-top: calc(8.5 * var(--space-unit));
+@media screen and (min-width: 768px) {
+  .logo-box {
+    width: auto;
+  }
 }
