@@ -4,8 +4,8 @@
 }
 @media screen and (min-width: 768px) {
   .curriculum-captions-box {
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-left: var(--space-h-pc);
+    margin-right: var(--space-h-pc);
     display: flex;
     flex-flow: row wrap;
   }
@@ -34,8 +34,8 @@
 @media screen and (min-width: 768px) {
   .curriculums {
     margin-top: var(--space-3x);
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-left: var(--space-h-pc);
+    margin-right: var(--space-h-pc);
     flex-flow: row wrap;
     justify-content: space-between;
   }

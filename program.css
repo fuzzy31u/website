@@ -10,8 +10,8 @@
 }
 @media screen and (min-width: 768px) {
   .programs {
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-left: var(--space-h-pc);
+    margin-right: var(--space-h-pc);
     display: flex;
     flex-flow: row wrap;
     align-content: space-around;
