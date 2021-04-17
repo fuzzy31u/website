@@ -65,7 +65,13 @@ body {
   margin-top: var(--space-20x);
 }
 @media screen and (min-width: 768px) {
-  #contents>div:nth-child(n+2) {
+  #contents>div:nth-child(n+2):nth-child(-n+7) {
+    margin-top: calc(28.5 * var(--space-unit));
+  }
+  #contents>div:nth-child(8) {
+    margin-top: calc(21.5 * var(--space-unit));
+  }
+  #contents>div:nth-child(n+9) {
     margin-top: calc(28.5 * var(--space-unit));
   }
 }

@@ -1,4 +1,3 @@
-/* horizontal-list */
 .programs {
   margin-top: var(--space-4x);
   overflow-x: auto;
@@ -8,6 +7,15 @@
   /* 以下、item間のスペースを削除するために設定 */
   font-size: 0;
   line-height: 0;
+}
+@media screen and (min-width: 768px) {
+  .programs {
+    margin-left: 16%;
+    margin-right: 16%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+  }
 }
 
 .programs .item {
@@ -20,9 +28,17 @@
   border-radius: 4px 4px 4px 4px;
   border: 1px solid var(--primary-color);
 }
+@media screen and (min-width: 768px) {
+  .programs .item {
+    width: 192px;
+    height: 330px;
+  }
+}
 
-.programs .item:nth-child(1) {
-  margin-left: var(--space-4x);
+@media screen and (max-width: 767px) {
+  .programs .item:nth-child(1) {
+    margin-left: var(--space-4x);
+  }
 }
 
 .programs .item:nth-child(n+2) {
@@ -35,7 +51,6 @@
 
 .programs .item .item-caption-area {
   border-radius: 4px 4px 0px 0px;
-  width: 280px;
   height: 82px;
   display: flex;
   align-items: center;
@@ -76,4 +91,10 @@
   background-image: url(./images/icon-gradation-next.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .programs .item+.item {
+    margin-bottom: var(--space-7x);
+  }
 }

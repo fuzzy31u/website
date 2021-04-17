@@ -1,6 +1,5 @@
 .appeal {
   margin-top: var(--space-1x);
-  /* position: relative; */
   width: fit-content;
   font-weight: bold;
   font-size: var(--font-4x);

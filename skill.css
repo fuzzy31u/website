@@ -1,11 +1,29 @@
 .skills {
-  margin: var(--space-6x) var(--space-4x) 0 var(--space-4x)
+  margin-top: var(--space-6x);
+  margin-left: var(--space-4x);
+  margin-right: var(--space-4x);
+  display: flex;
+  flex-flow: column;
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    margin-top: calc(6.5 * var(--space-unit));
+    margin-left: 16%;
+    margin-right: 16%;
+    flex-flow: row wrap;
+    justify-content: left;
+  }
 }
 
 .skill {
   overflow: hidden;
   background-color: var(--purple-6);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .skill {
+    width: 32%;
+  }
 }
 
 .skill-caption {
@@ -44,6 +62,19 @@
   color: var(--black-2);
 }
 
-.skills .skill:nth-child(n+2) {
-  margin-top: var(--space-3x);
+@media screen and (max-width: 767px) {
+  .skill+.skill {
+    margin-top: var(--space-3x);
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills .skill:nth-child(n+2):nth-child(-n+3),
+  .skills .skill:nth-child(n+5) {
+    margin-left: 2%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills .skill:nth-child(n+4) {
+    margin-top: 2%;
+  }
 }
