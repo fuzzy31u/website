@@ -58,6 +58,22 @@
   line-height: 160%;
   color: var(--black-2);
 }
+@media screen and (min-width: 768px) {
+  .entry-button-above-caption {
+    margin-top: var(--space-20x);
+    font-size: var(--font-8x);
+  }
+}
+
+.entry-button-comment {
+  margin-top: var(--space-4x);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .entry-button-comment {
+    margin-top: calc(6.5 * var(--font-unit));
+  }
+}
 
 .comment-body {
   margin: 0 calc(1.5 * var(--space-unit));
@@ -65,14 +81,12 @@
   font-weight: bold;
   font-size: calc(3.75 * var(--font-unit));
   line-height: 100%;
+  letter-spacing: 0.04em;  
 }
-
-.entry-button-comment {
-  margin-top: var(--space-4x);
-  text-align: center;
-  font-weight: bold;
-  font-size: calc(3.75 * var(--font-unit));
-  line-height: 100%;
+@media screen and (min-width: 768px) {
+  .comment-body {
+    font-size: var(--font-4xh);
+  }
 }
 
 #top .entry-button {
@@ -86,6 +100,12 @@
   text-align: center;
   line-height: 100%;
   color: var(--black);
+}
+@media screen and (min-width: 768px) {
+  #top .dead-line {
+    margin-top: var(--space-4x);
+    font-size: var(--font-3xh);
+  }
 }
 
 .closing-word-box {
