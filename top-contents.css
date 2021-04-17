@@ -8,29 +8,46 @@
   bottom: calc(26 * var(--space-unit));
   font-weight: bold;
   font-size: calc(11 * var(--space-unit));
-  line-height: calc(15.5 * var(--space-unit));
+  line-height: 140%;
+}
+@media screen and (min-width: 768px) {
+  .message-on-img-woman {
+    left: calc(45 * var(--space-unit));
+    bottom: calc(54 * var(--space-unit));
+    font-size: calc(22 * var(--space-unit));
+  }
 }
 
-.icon-minimum-span {
-  margin-bottom: var(--space-2x);
+.first-view-bottom-content {
+  position: absolute;
+  bottom: var(--space-2x);
+  left: var(--space-4x);
+}
+@media screen and (min-width: 768px) {
+  .first-view-bottom-content {
+    left: 16%;
+    bottom: var(--space-6x);
+  }
 }
 
 .fisrt-view-sub-caption {
   margin-top: auto;
   margin-left: var(--space-4x);
-  margin-bottom: calc(4.5 * var(--space-unit));
+  margin-bottom: calc(2.5 * var(--space-unit));
   color: var(--black-2);
   font-weight: bold;
-  font-size: 14px;
+  font-size: var(--font-3xh);
   color: var(--black-2);
   line-height: 160%;
-  letter-spacing: calc(0.4 * var(--space-unit));
+  letter-spacing: 0.1em;
 }
-
-.first-view-bottom-content {
-  position: absolute;
-  bottom: 0px;
-  left: var(--space-4x);
+@media screen and (min-width: 768px) {
+  .fisrt-view-sub-caption {
+    margin-top: auto;
+    margin-left: var(--space-6x);
+    margin-bottom: var(--space-10x);
+    font-size: var(--space-8x);
+  }
 }
 
 .entry-button-above-caption {
