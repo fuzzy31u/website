@@ -64,13 +64,24 @@ body {
 #contents>div:nth-child(n+2) {
   margin-top: var(--space-20x);
 }
+@media screen and (min-width: 768px) {
+  #contents>div:nth-child(n+2) {
+    margin-top: calc(28.5 * var(--space-unit));
+  }
+}
 
 /* contents-caption */
 .contents-caption {
   display: flex;
   align-items: start;
-  margin-left: var(--space-6x);
-  margin-right: var(--space-6x)
+  margin-left: var(--space-4x);
+  margin-right: var(--space-4x)
+}
+@media screen and (min-width: 768px) {
+  .contents-caption {
+    margin-left: 16%;
+    margin-right: 16%;
+  }
 }
 
 .contents-caption .sub-caption {
