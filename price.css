@@ -74,12 +74,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .price-block {
-    text-align: right;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .price-immersive-captions {
     display: flex;
     align-items: center;
@@ -127,13 +121,6 @@
   }
 }
 
-.price-campaign {
-  margin-top: var(--space-2x);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .price-total {
   margin: var(--space-6x) var(--space-6x) 0 var(--space-6x);
   display: flex;
@@ -169,50 +156,6 @@
   font-size: var(--space-3x);
   line-height: 160%;
   color: var(--black-2);
-}
-
-.price-body-box {
-  margin-top: var(--space-2x);
-  display: inline-block;
-  position: relative;
-}
-@media screen and (min-width: 768px) {
-  .price-body-box {
-    margin-top: 0px;
-  }
-}
-
-.price-strikethrough {
-  position: absolute;
-  width: 110%;
-  top: 50%;
-  left: -5%;
-  border: 1px solid var(--primary-color);
-}
-
-.campaign-label {
-  border-radius: 16px;
-  background-color: var(--red);
-}
-
-.campaign-caption {
-  margin: var(--space-1x) var(--space-4x);
-  font-weight: bold;
-  font-size: var(--font-4x);
-  line-height: 100%;
-  color: var(--white);
-}
-
-.campagin-price {
-  margin-left: var(--space-2x);
-  font-weight: bold;
-  font-size: var(--font-4xh);
-  line-height: 100%;
-  color: var(--red);
-}
-
-.campagin-price-emphasis {
-  font-size: var(--font-8x);
 }
 
 .price-total-body {
