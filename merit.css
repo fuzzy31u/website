@@ -52,7 +52,7 @@
 @media screen and (min-width: 768px) {
   .merits>.merit:nth-child(n+3):nth-child(-n+4) {
     margin-top: 5%;
-    height: 453px;
+    height: 474px;
   }
 }
 
