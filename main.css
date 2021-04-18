@@ -155,6 +155,13 @@ body {
   color: var(--white);
   background: linear-gradient(91.68deg, var(--primary-color) 0%, var(--primary-color-2) 100%);
 }
+@media screen and (min-width: 768px) {
+  .primary-button {
+    height: 72px;
+    width: 400px;
+    border-radius: 36px;
+  }
+}
 
 .primary-button .icon-next,
 .secondary-button .icon-next {
@@ -167,7 +174,7 @@ body {
 .button-title {
   color: var(--white);
   font-weight: bold;
-  font-size: 18px;
+  font-size: var(--font-4xh);
   line-height: 100%;
 }
 
