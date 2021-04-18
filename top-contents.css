@@ -8,29 +8,46 @@
   bottom: calc(26 * var(--space-unit));
   font-weight: bold;
   font-size: calc(11 * var(--space-unit));
-  line-height: calc(15.5 * var(--space-unit));
+  line-height: 140%;
+}
+@media screen and (min-width: 768px) {
+  .message-on-img-woman {
+    left: calc(45 * var(--space-unit));
+    bottom: calc(54 * var(--space-unit));
+    font-size: calc(22 * var(--space-unit));
+  }
 }
 
-.icon-minimum-span {
-  margin-bottom: var(--space-2x);
+.first-view-bottom-content {
+  position: absolute;
+  bottom: var(--space-2x);
+  left: var(--space-4x);
+}
+@media screen and (min-width: 768px) {
+  .first-view-bottom-content {
+    left: var(--space-h-pc);
+    bottom: var(--space-6x);
+  }
 }
 
 .fisrt-view-sub-caption {
   margin-top: auto;
   margin-left: var(--space-4x);
-  margin-bottom: calc(4.5 * var(--space-unit));
+  margin-bottom: calc(2.5 * var(--space-unit));
   color: var(--black-2);
   font-weight: bold;
-  font-size: 14px;
+  font-size: var(--font-3xh);
   color: var(--black-2);
   line-height: 160%;
-  letter-spacing: calc(0.4 * var(--space-unit));
+  letter-spacing: 0.1em;
 }
-
-.first-view-bottom-content {
-  position: absolute;
-  bottom: 0px;
-  left: var(--space-4x);
+@media screen and (min-width: 768px) {
+  .fisrt-view-sub-caption {
+    margin-top: auto;
+    margin-left: var(--space-6x);
+    margin-bottom: var(--space-10x);
+    font-size: var(--space-8x);
+  }
 }
 
 .entry-button-above-caption {
@@ -41,6 +58,22 @@
   line-height: 160%;
   color: var(--black-2);
 }
+@media screen and (min-width: 768px) {
+  .entry-button-above-caption {
+    margin-top: var(--space-20x);
+    font-size: var(--font-8x);
+  }
+}
+
+.entry-button-comment {
+  margin-top: var(--space-4x);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .entry-button-comment {
+    margin-top: calc(6.5 * var(--font-unit));
+  }
+}
 
 .comment-body {
   margin: 0 calc(1.5 * var(--space-unit));
@@ -48,14 +81,12 @@
   font-weight: bold;
   font-size: calc(3.75 * var(--font-unit));
   line-height: 100%;
+  letter-spacing: 0.04em;  
 }
-
-.entry-button-comment {
-  margin-top: var(--space-4x);
-  text-align: center;
-  font-weight: bold;
-  font-size: calc(3.75 * var(--font-unit));
-  line-height: 100%;
+@media screen and (min-width: 768px) {
+  .comment-body {
+    font-size: var(--font-4xh);
+  }
 }
 
 #top .entry-button {
@@ -70,13 +101,25 @@
   line-height: 100%;
   color: var(--black);
 }
+@media screen and (min-width: 768px) {
+  #top .dead-line {
+    margin-top: var(--space-4x);
+    font-size: var(--font-3xh);
+  }
+}
 
 .closing-word-box {
   position: relative;
   margin-top: var(--space-6x);
 }
+@media screen and (min-width: 768px) {
+  .closing-word-box {
+    margin-top: var(--space-20x);
+    text-align: right;
+  }
+}
 
-.img-woman-02 {
+.img-woman-02-sp {
   position: absolute;
   top: 216px;
   right: 0px;
@@ -84,19 +127,53 @@
   height: 286px;
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .img-woman-02-sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .img-woman-02-pc {
+    display: none;
+  }
+}
+
+.closing-words {
+  margin: 0 var(--space-6x);
+}
+@media screen and (min-width: 768px) {
+  .closing-words {
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: var(--space-h-pc);
+    text-align: left;
+  }
+}
 
 .closing-caption {
-  margin: var(--space-6x) var(--space-6x) 0 var(--space-6x);
   font-weight: bold;
   font-size: var(--font-5x);
   line-height: 160%;
   color: var(--black-2);
 }
+@media screen and (min-width: 768px) {
+  .closing-caption {
+    font-size: var(--font-8x);
+  }
+}
 
 .closing-word {
-  margin: var(--space-4x) var(--space-6x) 0 var(--space-6x);
+  margin-top: var(--space-4x);
   font-weight: bold;
   font-size: calc(3.75 * var(--font-unit));
   line-height: 200%;
   color: var(--black-2);
+}
+@media screen and (min-width: 768px) {
+  .closing-word {
+    margin-top: var(--space-12x);
+    font-size: var(--font-5x);
+    }
 }

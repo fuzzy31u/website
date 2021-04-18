@@ -1,5 +1,14 @@
 .comparison-contents {
-  margin: var(--space-6x) var(--space-4x) 0 var(--space-4x);
+  margin-top: var(--space-6x);
+  margin-left: var(--space-4x);
+  margin-right: var(--space-4x);
+}
+@media screen and (min-width: 768px) {
+  .comparison-contents {
+    margin-top: var(--space-8x);
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
 
 .comparison-table {
@@ -10,15 +19,30 @@
 .comparison-table td {
   padding: 12;
 }
+@media screen and (min-width: 768px) {
+  .comparison-table td {
+    padding: 12 16;
+  }
+}
 
 .comparison-table th {
   padding: 8;
+}
+@media screen and (min-width: 768px) {
+  .comparison-table th {
+    padding: 14;
+  }
 }
 
 .comparison-table tr th:nth-child(1) {
   width: 20%;
   border: 1px var(--white) solid;
   background: var(--gray);
+}
+@media screen and (min-width: 768px) {
+  .comparison-table tr th:nth-child(1) {
+    width: 12.5%;
+  }
 }
 
 .comparison-table tr th:nth-child(2) {
@@ -29,6 +53,12 @@
   line-height: 100%;
   color: var(--white);
 }
+@media screen and (min-width: 768px) {
+  .comparison-table tr th:nth-child(2) {
+    width: 43.75%;
+    font-size: var(--font-5x);
+  }
+}
 
 .comparison-table tr th:nth-child(3) {
   width: 40%;
@@ -38,6 +68,12 @@
   line-height: 140%;
   text-align: center;
   color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .comparison-table tr th:nth-child(3) {
+    width: 43.75%;
+    font-size: calc(3.75 * var(--font-unit));
+  }
 }
 
 .comparison-table tr:nth-child(n+2) td:nth-child(2) {
@@ -57,7 +93,7 @@
   color: var(--purple);
 }
 
-.comparison-table tr:nth-child(n+4) td:nth-child(2)::after {
+.comparison-table tr:nth-child(4) td:nth-child(2)::after {
   content: "※1";
   font-weight: bold;
   font-size: var(--font-3x);
@@ -79,6 +115,11 @@
   line-height: 160%;
   color: var(--black-4);
 }
+@media screen and (min-width: 768px) {
+  .comparison-table tr:nth-child(n+5) td:nth-child(2) {
+    font-size: var(--font-3xh);
+  }
+}
 
 .comparison-table tr:nth-child(n+3):nth-child(-n+4) td:nth-child(3) {
   font-size: var(--font-4x);
@@ -93,12 +134,18 @@
   line-height: 160%;
   color: var(--black-2);
 }
+@media screen and (min-width: 768px) {
+  .comparison-table tr:nth-child(2) td:nth-child(3),
+  .comparison-table tr:nth-child(n+5) td:nth-child(3) {
+      font-size: var(--font-3xh);
+  }
+}
 
 .table-caption {
   text-align: center;
   font-family: Noto Sans JP;
   font-weight: bold;
-  font-size: 14px;
+  font-size: var(--font-3xh);
   line-height: 100%;
   color: var(--black-2);
 }

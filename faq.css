@@ -1,6 +1,15 @@
 
 .faq-contents {
-  margin: var(--space-6x) var(--space-6x) 0 var(--space-6x)
+  margin-top: var(--space-6x);
+  margin-left: var(--space-6x);
+  margin-right: var(--space-6x);
+}
+@media screen and (min-width: 768px) {
+  .faq-contents {
+    margin-top: calc(3.5 * var(--space-unit));
+    margin-left: var(--space-h-pc);
+    margin-right: var(--space-h-pc);
+  };
 }
 
 .faq {
@@ -10,6 +19,11 @@
 
 .faq-body {
   margin: var(--space-3x) var(--space-4x) var(--space-3x) var(--space-4x)
+}
+@media screen and (min-width: 768px) {
+  .faq-body {
+    margin: var(--space-6x) var(--space-8x) var(--space-6x) var(--space-6x)
+  }
 }
 
 /* アコーディオンボタン（開閉ボタン） */
@@ -89,4 +103,9 @@
   text-align: center;
   line-height: 100%;
   color: var(--black);
+}
+@media screen and (min-width: 768px) {
+  #faq .dead-line {
+    font-size: var(--font-3xh);
+  }
 }

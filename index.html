@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="color.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="typography.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="margins.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="top-contents.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="voice.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="path.css" />
@@ -21,37 +22,83 @@
     <link rel="stylesheet" type="text/css" media="screen" href="price.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="faq.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="concept.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="counseling.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="header-content">
+    <div class="header-sp">
+      <div class="header-content-sp">
         <img src="./images/logo-ms-engineer.png" width="113" height="25">
         <img src="./images/icon-drawer.png" width="24" height="24">
       </div>
+    </div>
+    <div class="header-pc">
+      <img class="logo-ms-engineer-l" src="./images/logo-ms-engineer-l.png" width="154" height="34">
+      <div class="header-links">
+        <a class="header-link" href="#path">
+          <p class="header-link-caption">PATH</p>
+          <p class="header-link-sub-caption">転職実績</p>
+        </a>
+        <a class="header-link" href="#merit">
+          <p class="header-link-caption">MERIT</p>
+          <p class="header-link-sub-caption">転職のメリット</p>
+        </a>
+        <a class="header-link" href="#curriculum">
+          <p class="header-link-caption">CURRICULUM</p>
+          <p class="header-link-sub-caption">カリキュラム</p>
+        </a>
+        <a class="header-link" href="#skills">
+          <p class="header-link-caption">SKILLS</p>
+          <p class="header-link-sub-caption">身につくスキル</p>
+        </a>
+        <a class="header-link" href="#program">
+          <p class="header-link-caption">PROGRAM</p>
+          <p class="header-link-sub-caption">プログラムの流れ</p>
+        </a>
+        <a class="header-link" href="#support">
+          <p class="header-link-caption">SUPPORT</p>
+          <p class="header-link-sub-caption">サポート</p>
+        </a>
+        <a class="header-link" href="#price">
+          <p class="header-link-caption">PRICE</p>
+          <p class="header-link-sub-caption">価格について</p>
+        </a>
+        <a class="header-link" href="#faq">
+          <p class="header-link-caption">FAQ</p>
+          <p class="header-link-sub-caption">よくある質問</p>
+        </a>
+      </div>
+      <a class="header-entry-button" href="https://forms.gle/aRhWuyGjRkqrHXEcA">
+        <div class="header-entry-button-titles">
+          <p class="header-button-title">0期生にエントリーする</p>
+          <img class="icon-next" src="./images/icon-next.png" width="24" height="24">
+        </div>
+      </a>
     </div>
 
     <div id="contents">
       <!-- top contents -->
       <div id="top">
         <div class="top-contents-box">
-          <img class="width-fill-image" src="./images/img-woman01.png" width="375" height="518">
+          <img class="width-fill-image sp" src="./images/img-woman01-sp.png" width="375" height="518">
+          <img class="width-fill-image pc" src="./images/img-woman01-pc.png" width="1600" height="880">
           <div class="top-layer">
             <p class="message-on-img-woman">私の時代を、<br>切り開く</p>
             <div class="first-view-bottom-content flex-box">
-              <img class="icon-minimum-span" src="./images/icon-minimum-span.png" width="84" height="84">
-              <p class="fisrt-view-sub-caption">日本最難関カリキュラムで<br>世界で通用するエンジニアに</p>
+              <img class="sp" src="./images/icon-minimum-span-sp.png" width="84" height="84">
+              <img class="pc" src="./images/icon-minimum-span-pc.png" width="160" height="160">
+              <p class="fisrt-view-sub-caption">日本最難関カリキュラムで<br class="sp">世界で通用するエンジニアに</p>
               </div>
           </div>
         </div>
-        <div class="box-text">
-          <p class="entry-button-above-caption">女性のための<br>オンラインプログラミングスクール</p>
-        </div>
+        <p class="entry-button-above-caption">女性のための<br>オンラインプログラミングスクール</p>
         <div class="entry-button-comment">
           <div class="inline-block">
             <div class="flex-box-center">
-              <img src="./images/icon-comment-start.png" width="8" height="12">
+              <img class="sp" src="./images/icon-comment-start-sp.png" width="8" height="12">
+              <img class="pc" src="./images/icon-comment-start-pc.png" width="12" height="18">
               <p class="comment-body">10名限定 0期生募集中！</p>
-              <img src="./images/icon-comment-end.png" width="8" height="12">
+              <img class="sp" src="./images/icon-comment-end-sp.png" width="8" height="12">
+              <img class="pc" src="./images/icon-comment-end-pc.png" width="12" height="18">
             </div>
           </div>
         </div>
@@ -61,56 +108,79 @@
         </a>
         <p class="dead-line">応募締め切り：2021/5/20 23:59</p>
         <div class="closing-word-box">
-          <img class="img-woman-02" src="./images/img-woman02.png" width="223" height="320">
-          <p class="closing-caption">場所・時間・手に職、収入。<br>エンジニアは”私らしい豊かさ”を叶えるはたらき方。</p>
-          <p class="closing-word">
-            コロナで発達するリモートワーク、AIの進化..　急速に変わっていく世界に<br>
-            いつかおいていかれてしまうかもしれない。<br>
-            でも今の仕事をやめて、<br>
-            ここ以外の世界で通用するのかと<br>
-            漠然とした不安を感じる。<br>
-            <br>
-            このままのがんばり方で、<br>
-            理想の母親になることや<br>
-            働き続けることはできるのか、<br>
-            正直イメージはできていない。<br>
-            <br>
-            でもきっとどこかに、<br>
-            世界に必要とされながら、<br>
-            私らしい豊かさを<br>
-            叶えられる仕事があるはず。<br>
-            <br>
-            ---------その答えに「エンジニア」という選択肢を加えませんか？
-          </p>
+          <img class="img-woman-02-sp" src="./images/img-woman02-sp.png" width="223" height="320">
+          <img class="img-woman-02-pc" src="./images/img-woman02-pc.png" width="880" height="880">
+          <div class="closing-words">
+            <p class="closing-caption">場所・時間・手に職、収入。<br>エンジニアは”私らしい豊かさ”を叶えるはたらき方。</p>
+            <p class="closing-word sp">
+              コロナで発達するリモートワーク、AIの進化..　急速に変わっていく世界に<br>
+              いつかおいていかれてしまうかもしれない。<br>
+              でも今の仕事をやめて、<br>
+              ここ以外の世界で通用するのかと<br>
+              漠然とした不安を感じる。<br>
+              <br>
+              このままのがんばり方で、<br>
+              理想の母親になることや<br>
+              働き続けることはできるのか、<br>
+              正直イメージはできていない。<br>
+              <br>
+              でもきっとどこかに、<br>
+              世界に必要とされながら、<br>
+              私らしい豊かさを<br>
+              叶えられる仕事があるはず。<br>
+              <br>
+              ---------その答えに「エンジニア」という選択肢を加えませんか？
+            </p>
+            <p class="closing-word pc">
+              コロナで発達するリモートワーク、AIの進化..<br>
+              急速に変わっていく世界に<br>
+              いつかおいていかれてしまうかもしれない。<br>
+              でも今の仕事をやめて、ここ以外の世界で通用するのかと<br>
+              漠然とした不安を感じる。<br>
+              <br>
+              このままのがんばり方で、<br>
+              理想の母親になることや働き続けることはできるのか、<br>
+              正直イメージはできていない。<br>
+              <br>
+              でもきっとどこかに、世界に必要とされながら、<br>
+              私らしい豊かさを叶えられる仕事があるはず。<br>
+              <br>
+              ---------その答えに「エンジニア」という選択肢を加えませんか？<br>
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- 現役女性エンジニアのリアルボイス -->
-      <div>
+      <div id="voice">
         <div class="contents-caption">
           <p class="sub-caption">VOICE</p>
-          <h2 class="main-caption">現役女性エンジニアの<br>リアルボイス</h2>
+          <h2 class="main-caption">現役女性エンジニアの<br class="sp">リアルボイス</h2>
         </div>
         <div class="voices">
           <div class="gradiention-rect">
           </div>
           <ul class="horizontal-list">
             <li class="item">
-              <img src="./images/img-woman-engineer01.png" width=280 height=144>
-              <p class="item-caption">仕事もプライベートも○○でhogehoge</p>
-              <p class="item-text">先生は中にたくさん光る砂のつぶの入った大きな両面の凸とつレンズを指しました。「天の川の形はちょうどこんななのです。このいちいちの光るつぶがみんな私どもの太陽と同じようにじぶんで光っている星だと考えます。私どもの太陽がこのほぼ中ごろにあって地球がそのすぐ近くにあるとします。</p>
+              <img class="width-fill-image" src="./images/img-woman-engineer01.png" width=280 height=144>
+              <div class="item-texts">
+                <p class="item-caption">仕事もプライベートも○○でhogehoge</p>
+                <p class="item-text">先生は中にたくさん光る砂のつぶの入った大きな両面の凸とつレンズを指しました。「天の川の形はちょうどこんななのです。このいちいちの光るつぶがみんな私どもの太陽と同じようにじぶんで光っている星だと考えます。私どもの太陽がこのほぼ中ごろにあって地球がそのすぐ近くにあるとします。</p>
+              </div>
             </li>
             <li class="item">
-              <img src="./images/img-woman-engineer01.png" width=280 height=144>
-              <p class="item-caption">仕事もプライベートも○○でhogehoge</p>
-              <p class="item-text">先生は中にたくさん光る砂のつぶの入った大きな両面の凸とつレンズを指しました。「天の川の形はちょうどこんななのです。このいちいちの光るつぶがみんな私どもの太陽と同じようにじぶんで光っている星だと考えます。私どもの太陽がこのほぼ中ごろにあって地球がそのすぐ近くにあるとします。</p>
+              <img class="width-fill-image" src="./images/img-woman-engineer01.png" width=280 height=144>
+              <div class="item-texts">
+                <p class="item-caption">仕事もプライベートも○○でhogehoge</p>
+                <p class="item-text">先生は中にたくさん光る砂のつぶの入った大きな両面の凸とつレンズを指しました。「天の川の形はちょうどこんななのです。このいちいちの光るつぶがみんな私どもの太陽と同じようにじぶんで光っている星だと考えます。私どもの太陽がこのほぼ中ごろにあって地球がそのすぐ近くにあるとします。</p>
+              </div>
             </li>
           </ul>
         </div>
       </div>
 
       <!-- 卒業生の転職実績 -->
-      <div>
+      <div id="path">
         <div class="contents-caption">
           <p class="sub-caption">PATH</p>
           <div class="main-caption-section">
@@ -119,36 +189,32 @@
           </div>
         </div>
         <div class="partners">
-          <div class="text-align-center">
-            <div class="inline-block">
-              <div class="row-1">
-                <div class="flex-box-center">
-                  <img src="./images/logo-Google.png" width="116" height="68">
-                  <img class="logo-mercari" src="./images/logo-mercari.png" width="202" height="62">
-                </div>
-              </div>
-              <div class="row-2">
-                <div class="flex-box-center">
-                  <img class="logo-SONY" src="./images/logo-SONY.png" width="125" height="22">
-                  <img class="logo-IBM" src="./images/logo-IBM.png" width="82" height="33">
-                </div>
-              </div>
-              <div class="row-3">
-                <div class="flex-box-center">
-                  <img class="logo-LINE" src="./images/logo-LINE.png" width="94" height="33">
-                  <img class="logo-Rakuten" src="./images/logo-Rakuten.png" width="119" height="37">
-                </div>
-              </div>
-            </div>
+          <div class=logo-box>
+            <img class="logo-Google" src="./images/logo-Google.png" width="116" height="68">
+          </div>
+          <div class=logo-box>
+            <img class="logo-mercari" src="./images/logo-mercari.png" width="202" height="62">
+          </div>
+          <div class=logo-box>
+            <img class="logo-SONY" src="./images/logo-SONY.png" width="125" height="22">
+          </div>
+          <div class=logo-box>
+            <img class="logo-IBM" src="./images/logo-IBM.png" width="82" height="33">
+          </div>
+          <div class=logo-box>
+            <img class="logo-LINE" src="./images/logo-LINE.png" width="94" height="33">
+          </div>
+          <div class=logo-box>
+            <img class="logo-Rakuten" src="./images/logo-Rakuten.png" width="119" height="37">
           </div>
         </div>
       </div>
 
       <!-- エンジニア転職のメリット -->
-      <div>
+      <div id="merit">
         <div class="contents-caption">
           <p class="sub-caption">MERIT</p>
-          <h2 class="main-caption">エンジニア転職の<br>メリット</h2>
+          <h2 class="main-caption">エンジニア転職の<br class="sp">メリット</h2>
         </div>
         <div class="merits">
           <div class="merit">
@@ -161,7 +227,7 @@
                 エンジニア人材は2030年に約50万人〜70万人不足すると言われ、成長するIT産業の中でも特に求人が多い職種です。今後数十年に渡って、転職ニーズがあり続けると考えられ、<span class="merit-emphasis">結婚・出産・育児などのライフイベントを超えてはたらき続けることが可能</span>です。
               </p>
               <div class="engineer-shortage">
-                <img src="./images/img-engineer-shortage.png" width="295" height="262">
+                <img class="img-engineer-shortage" src="./images/img-engineer-shortage.png" width="295" height="262">
               </div>
               <p class="merit-reference">引用元：平成 30 年度我が国におけるデータ駆動型社会に係る基盤整備│経済産業省</p>
             </div>
@@ -177,7 +243,8 @@
               </p>
               <p class="merit-reference">引用元：令和2年テレワーク実施状況に関するアンケート調査│paiza株式会社</p>
               <div class="nomad-worker">
-                <img src="./images/img-woman06.png" width="295" height="144">
+                <img class="sp" src="./images/img-woman06-sp.png" width="295" height="144">
+                <img class="pc width-fill-image" src="./images/img-woman06-pc.png" width="464" height="472">
               </div>
             </div>
           </div>
@@ -229,16 +296,18 @@
       </div>
 
       <!-- カリキュラム紹介・カリキュラム提携先 -->
-      <div>
-        <div class="contents-caption">
-          <p class="sub-caption">CURRICULUM</p>
-          <div class="main-captions">
-            <h2 class="main-caption">カリキュラム紹介・<br>カリキュラム提携先</h2>
-            <p class="explanation">未経験からグローバルIT企業へ卒業生を輩出した実績をもつ、日本最難関のシリコンバレー式プログラミングブートキャンプ「コードクリサリス」とカリキュラム提携しています。</p>
+      <div id="curriculum">
+        <div class="curriculum-captions-box">
+          <div class="contents-caption">
+            <p class="sub-caption">CURRICULUM</p>
+            <div class="main-captions">
+              <h2 class="main-caption">カリキュラム紹介・<br class="sp">カリキュラム提携先</h2>
+              <p class="explanation">未経験からグローバルIT企業へ卒業生を輩出した実績をもつ、日本最難関のシリコンバレー式プログラミングブートキャンプ「コードクリサリス」とカリキュラム提携しています。</p>
+            </div>
           </div>
-        </div>
-        <div class="curriculum-provider-logo">
-          <img src="./images/logo-CodeChrysalis.png" width="276" height="80">
+          <div class="curriculum-provider-logo">
+            <img src="./images/logo-CodeChrysalis.png" width="276" height="80">
+          </div>
         </div>
         <div class="curriculums">
           <div class="curriculum">
@@ -248,7 +317,9 @@
                 <p class="caption-sub">Foundations</p>
               </div>
             </div>
-            <p class="curriculum-explanation">自分でWebサイトの構築ができるレベル（5週間）</p>
+            <div class="curriculum-explanation-box">
+              <p class="curriculum-explanation">自分でWebサイトの構築ができるレベル<br class="sp">（5週間）</p>
+            </div>
           </div>
           <div class="curriculum">
             <div class="curriculum-caption">
@@ -257,16 +328,18 @@
                 <p class="caption-sub">Immersive</p>
               </div>
             </div>
-            <p class="curriculum-explanation">ファンデーションズを経て入学試験に合格後は3ヶ月の<span class="marker-yellow">ブートキャンプ形式</span>でのプログラムを受講していただきます。<br>プログラミング言語の習得を進めながら、楽天やSpotifyなどの企業パートナーの提供により、<span class="marker-yellow">実務経験を積むことも可能</span>です。</p>
+            <div class="curriculum-explanation-box">
+              <p class="curriculum-explanation">ファンデーションズを経て入学試験に合格後は3ヶ月の<span class="marker-yellow">ブートキャンプ形式</span>でのプログラムを受講していただきます。<br>プログラミング言語の習得を進めながら、楽天やSpotifyなどの企業パートナーの提供により、<span class="marker-yellow">実務経験を積むことも可能</span>です。</p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Ms.Egineerで身につく力 -->
-      <div>
+      <div id="skills">
         <div class="contents-caption">
           <p class="sub-caption">SKILLS</p>
-          <h2 class="main-caption">Ms.Engineerで<br>身につく力</h2>
+          <h2 class="main-caption">Ms.Engineerで<br class="sp">身につく力</h2>
         </div>
         <div class="skills">
           <div class="skill">
@@ -308,7 +381,7 @@
       </div>
 
       <!-- プログラムの流れ -->
-      <div>
+      <div id="program">
         <div class="contents-caption">
           <p class="sub-caption">PROGRAM</p>
           <div class="main-captions">
@@ -348,10 +421,10 @@
             <p class="item-text">これまで学んできたことの集大成として、約4週間で<span class="program-emphasis">チームで自由にプロダクトを企画・開発</span>し、出来上がったアプリケーションについてのプレゼンテーションをしていただきます。</p>
           </li>
         </ul>
-    </div>
+      </div>
       
       <!-- 未経験でも安心な理由 -->
-      <div>
+      <div id="support">
         <div class="contents-caption">
           <p class="sub-caption">SUPPORT</p>
           <div class="main-captions">
@@ -364,59 +437,69 @@
         <div class="supports">
           <div class="support">
             <div class="image-align">
-              <img class="support-image" src="./images/img-woman03.png" width=327 height=160>
+              <img class="sp" src="./images/img-woman03-sp.png" width="327" height="160">
+              <img class="pc" src="./images/img-woman03-pc.png" width="576" height="282">
             </div>
-            <div class="support-content">
-              <p class="support-caption">挫折させない専属サポート体制</p>
-              <p class="support-explanation">Ms.EngineerではIT企業で働く現役のエンジニアが専属のコーチとして、24時間オンラインでいつでも質問に応じてくれます。</p>
-            </div>
-          </div>
-          <div class="support">
-            <div class="image-align">
-              <img class="support-image" src="./images/img-woman04.png" width=327 height=160>
-            </div>
-            <div class="support-content">
-              <p class="support-caption">基礎から世界で通用する応用技術までを徹底的に学習</p>
-              <p class="support-explanation">プログラミング言語に触れたことがない初心者の方を対象にした基礎学習から始めます。基礎をしっかり身につけた上で応用的な学習を進めていくため、つまずくことなく学べます。</p>
-            </div>
-          </div>
-          <div class="support">
-            <div class="image-align">
-              <img class="support-image" src="./images/img-woman05.png" width=327 height=160>
-            </div>
-            <div class="support-content">
-              <p class="support-caption">ライフコーチがあなたに合わせた転職までのキャリアプランを一緒に設計</p>
-              <p class="support-explanation">ライフコーチとの面談では学習の進め方や今後のキャリアプランの設計を行います。学習を進める中での疑問点やキャリアについての悩みにライフコーチが寄り添ってアドバイスします。</p>
-            </div>
-          </div>
-        </div>
-        <div class="counseling">
-          <img class="counseling-image width-fill-image" src="./images/img-counseling.png" width="375" height="546">
-          <div class="top-layer">
-            <div class="concerns">
-              <div class="concern-contens">
-                <div class="flex-box-center-middle circle purple-2">
-                  <p class="concern">そもそも<br>エンジニアって<br>どんな風に<br>働くの？</p>
-                </div>
-                <div class="flex-box-center-middle circle purple-2">
-                  <p class="concern">今の仕事を<br>続けていく<br>イメージが持て<br>なくて不安</p>
-                </div>
-                <div class="flex-box-center-middle circle purple-2">
-                  <p class="concern">未経験から<br>本当に<br>エンジニアに<br>なれるの？</p>
-                </div>
+            <div class="support-content-box">
+              <div class="support-content">
+                <p class="support-caption">挫折させない専属サポート体制</p>
+                <p class="support-explanation">Ms.EngineerではIT企業で働く現役のエンジニアが専属のコーチとして、24時間オンラインでいつでも質問に応じてくれます。</p>
               </div>
             </div>
-            <p class="concerns-caption">エントリーを<br>迷われている方へ</p>
-            <p class="concerns-message">メールまたは公式LINEで受講に関する相談を受け付けています。ご不安な点や気になることがあればお気軽にお問い合わせください</p>
-            <a class="mail-inquiry-button">
-              <p class="button-title">メールで質問する</p>
-            </a>
+          </div>
+          <div class="support">
+            <div class="image-align">
+              <img class="sp" src="./images/img-woman04-sp.png" width="327" height="160">
+              <img class="pc" src="./images/img-woman04-pc.png" width="576" height="282">
+            </div>
+            <div class="support-content-box">
+              <div class="support-content">
+                <p class="support-caption">基礎から世界で通用する応用技術までを徹底的に学習</p>
+                <p class="support-explanation">プログラミング言語に触れたことがない初心者の方を対象にした基礎学習から始めます。基礎をしっかり身につけた上で応用的な学習を進めていくため、つまずくことなく学べます。</p>
+              </div>
+            </div>
+          </div>
+          <div class="support">
+            <div class="image-align">
+              <img class="sp" src="./images/img-woman05-sp.png" width="327" height="160">
+              <img class="pc" src="./images/img-woman05-pc.png" width="576" height="282">
+            </div>
+            <div class="support-content-box">
+              <div class="support-content">
+                <p class="support-caption">ライフコーチがあなたに合わせた転職までのキャリアプランを一緒に設計</p>
+                <p class="support-explanation">ライフコーチとの面談では学習の進め方や今後のキャリアプランの設計を行います。学習を進める中での疑問点やキャリアについての悩みにライフコーチが寄り添ってアドバイスします。</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- エントリーを迷われている方へ -->
+      <div class="counseling">
+        <img class="sp width-fill-image" src="./images/img-counseling-sp.png" width="375" height="546">
+        <img class="pc width-fill-image" src="./images/img-counseling-pc.png" width="1600" height="509">
+        <div class="top-layer">
+          <div class="concerns">
+            <div class="concern-balloon">
+              <p class="concern">そもそも<br>エンジニアって<br>どんな風に<br>働くの？</p>
+            </div>
+            <div class="concern-balloon">
+              <p class="concern">今の仕事を<br>続けていく<br>イメージが持て<br>なくて不安</p>
+            </div>
+            <div class="concern-balloon">
+              <p class="concern">未経験から<br>本当に<br>エンジニアに<br>なれるの？</p>
+            </div>
+          </div>
+          <p class="concerns-caption">エントリーを<br class="sp">迷われている方へ</p>
+          <p class="concerns-message">メールまたは公式LINEで受講に関する相談を受け付けています。<br class="pc">ご不安な点や気になることがあればお気軽にお問い合わせください</p>
+          <a class="mail-inquiry-button">
+            <p class="button-title">メールで質問する</p>
+          </a>
+        </div>
+      </div>
+
       <!-- 他社比較 -->
-      <div>
+      <div id="comparison">
         <div class="contents-caption">
           <p class="sub-caption">COMPARISON</p>
           <div class="main-captions">
@@ -429,7 +512,7 @@
             <tr>
               <th></th>
               <th>Ms.Engineer</th>
-              <th>一般的な<br>プログラミングスクール</th>
+              <th>一般的な<br class="sp">プログラミングスクール</th>
             </tr>
             <tr>
               <th>コンピューターサイエンス</th>
@@ -448,7 +531,7 @@
             </tr>
             <tr>
               <th>技術力</th>
-              <td>アルゴリズム設計〜アプリケーションの実装まで例）配車サービス（Uber等）の最短ルートの検索</td>
+              <td>アルゴリズム設計〜<br class="pc">アプリケーションの実装まで例）配車サービス（Uber等）の最短ルートの検索</td>
               <td>アプリケーションの実装</td>
             </tr>
             <tr>
@@ -465,7 +548,7 @@
       </div>
 
       <!-- 価格について -->
-      <div>
+      <div id="price">
         <div class="contents-caption">
           <p class="sub-caption">PRICE</p>
           <div class="main-captions">
@@ -479,29 +562,35 @@
             <div class="price">
               <div class="price-basics">
                 <p class="price-caption">基礎</p>
-                <div class="price-body-box">
-                  <p class="price-body"><span class="price-main">9.8</span>万円</p>
-                  <hr class="price-strikethrough">
-                </div>
-                <div class="price-campaign">
-                  <div class="campaign-label">
-                    <p class="campaign-caption">0期生限定</p>
+                <div class="price-block">
+                  <div class="price-body-box">
+                    <p class="price-body"><span class="price-main">9.8</span>万円</p>
+                    <hr class="price-strikethrough">
                   </div>
-                  <p class="campagin-price"><span class="campagin-price-emphasis">3</span>万円</p>
+                  <div class="price-campaign">
+                    <div class="campaign-label">
+                      <p class="campaign-caption">0期生限定</p>
+                    </div>
+                    <p class="campagin-price"><span class="campagin-price-emphasis">3</span>万円</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="price">
               <div class="price-immersive">
-                <p class="price-caption">応用プロ技術</p>
-                <p class="price-braces">（最難関ブートキャンプ）</p>
+                <div class="price-immersive-captions">
+                  <p class="price-caption">応用プロ技術</p>
+                  <p class="price-braces">（最難関ブートキャンプ）</p>
+                </div>
                 <p class="price-body"><span class="price-main">127</span>万円</p>
               </div>
             </div>
           </div>
           <div class="price-total">
-            <p class="price-total-body"><span class="price-total-head">合計</span><span class="price-total-emphasis">137</span><span class="price-total-sub-emphasis"> 万円</span><span class="price-total-weakness">（税込）</span></p>
-            <hr>
+            <div class="price-total-block">
+              <p class="price-total-body"><span class="price-total-head">合計</span><span class="price-total-emphasis">137</span><span class="price-total-sub-emphasis"> 万円</span><span class="price-total-weakness">（税込）</span></p>
+              <hr>
+            </div>
           </div>
           <div class="price-annotations">
             <p class="price-annotation">※応用プロ技術コースのフルタイム（平日9時〜6時）のコースを受講した場合。パートタイムコースは約9ヶ月〜1年が目安です。</p>
@@ -836,14 +925,15 @@
 
       <!-- MS.Engineer設立に込めた思い -->
       <div id="concept">
-        <img class="concept-image" src="./images/img-msengineer.png" width="375" height="914">
+        <img class="sp width-fill-image" src="./images/img-msengineer-sp.png" width="375" height="914">
+        <img class="pc width-fill-image" src="./images/img-msengineer-pc.png" width="1600" height="912">
         <div class="top-layer">
           <div class="contents-caption">
             <p class="sub-caption">CONCEPT</p>
-            <h2 class="main-caption">Ms.Engineer<br>設立に込めた想い</h2>
+            <h2 class="main-caption">Ms.Engineer<br class="sp">設立に込めた想い</h2>
           </div>
           <div class="messages">
-            <p class="message">
+            <p class="message sp">
               「女性にも男性と同じ国民としての 才能や知恵、道徳を与え、ともに助け合っていかなければならない。」<br>
               渋沢栄一は著書「論語と算盤」の中で、<br>
               当時教育を受けるべきではないとされていた女性に対しての"女子教育の重要性"をとき、<br>
@@ -856,6 +946,21 @@
               令和版"女子教育"が新時代とたくさんの女性の未来を切り開くと信じて<br>
               Ms.Engineerをスタートします。
             </p>
+            <p class="message pc">
+              「女性にも男性と同じ国民としての 才能や知恵、道徳を与え、ともに助け合っていかなければならない。」<br>
+              渋沢栄一は著書「論語と算盤」の中で、<br>
+              当時教育を受けるべきではないとされていた女性に対しての"女子教育の重要性"をとき、<br>
+              日本初の女子高等教育機関である日本女子大学を創立しました。<br>
+              それから約100年、<br>
+              女性の就業人口が3,000万人となった現代で、コロナ渦で失業した多くは女性であり、<br>
+              雇用格差はより女性に重くのしかかっていることが浮き彫りになりました。<br>
+              一方、日本のIT人材やテクノロジーは他国に遅れをとっていると言われ、<br>
+              常に人材不足が叫ばれているにも関わらず、<br>
+              エンジニアの女性比率は2割に満たないといわれています。<br>
+              「女性にも日本のテクノロジーを成長させる知識を授け、ともに助け合っていかなければならない。」<br>
+              令和版"女子教育"が新時代とたくさんの女性の未来を切り開くと信じて<br>
+              Ms.Engineerをスタートします。<br>
+            </p>
             <div class="signs">
               <p class="ms-engineer-title">Ms.Engineer主宰/co-founder</p>
               <p class="sign">やまざきひとみ</p>
@@ -863,6 +968,31 @@
           </div>
         </div>
       </div>
+
+      <!-- エントリーを迷われている方へ -->
+      <div class="counseling">
+        <img class="sp width-fill-image" src="./images/img-counseling-sp.png" width="375" height="546">
+        <img class="pc width-fill-image" src="./images/img-counseling-pc.png" width="1600" height="509">
+        <div class="top-layer">
+          <div class="concerns">
+            <div class="concern-balloon">
+              <p class="concern">そもそも<br>エンジニアって<br>どんな風に<br>働くの？</p>
+            </div>
+            <div class="concern-balloon">
+              <p class="concern">今の仕事を<br>続けていく<br>イメージが持て<br>なくて不安</p>
+            </div>
+            <div class="concern-balloon">
+              <p class="concern">未経験から<br>本当に<br>エンジニアに<br>なれるの？</p>
+            </div>
+          </div>
+          <p class="concerns-caption">エントリーを<br class="sp">迷われている方へ</p>
+          <p class="concerns-message">メールまたは公式LINEで受講に関する相談を受け付けています。<br class="pc">ご不安な点や気になることがあればお気軽にお問い合わせください</p>
+          <a class="mail-inquiry-button">
+            <p class="button-title">メールで質問する</p>
+          </a>
+        </div>
+      </div>
+
     </div>
 
   </body>

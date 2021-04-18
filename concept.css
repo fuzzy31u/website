@@ -2,11 +2,6 @@
   position: relative;
 }
 
-.concept-image {
-  width: 100%;
-  height: auto;
-}
-
 #concept .main-caption {
   color: var(--white);
 }
@@ -16,7 +11,16 @@
 }
 
 .messages {
-  margin: var(--space-2x) var(--space-6x) 0 var(--space-6x)
+  margin-top: var(--space-2x);
+  margin-left: var(--space-6x);
+  margin-right: var(--space-6x);
+}
+@media screen and (min-width: 768px) {
+  .messages {
+    margin-top: calc(1.5 * var(--space-unit));
+    margin-left: var(--space-h-pc);
+    margin-right: var(--space-h-pc);
+  }
 }
 
 .message {
@@ -24,6 +28,13 @@
   font-size: calc(3.75 * var(--font-unit));
   line-height: 180%;
   color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .message {
+    font-size: var(--font-4xh);
+    line-height: 240%;
+    letter-spacing: 0.1em;
+  }
 }
 
 .ms-engineer-title,
@@ -36,6 +47,11 @@
 .ms-engineer-title {
   font-size: var(--font-3x);
 }
+@media screen and (min-width: 768px) {
+  .ms-engineer-title {
+    font-size: var(--font-3xh);
+  }  
+}
 
 .signs {
   margin-top: var(--space-10x)
@@ -43,4 +59,10 @@
 
 .sign {
   font-size: calc(3.75 * var(--font-unit));
+}
+@media screen and (min-width: 768px) {
+  .sign {
+    margin-top: var(--space-1x);
+    font-size: var(--font-4xh);
+  }
 }
