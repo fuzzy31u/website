@@ -43,8 +43,10 @@
   text-decoration: none;
 }
 
-.header-link+.header-link {
-  margin-left: var(--space-8x);
+@media screen and (min-width: 768px) {
+  .header-link+.header-link {
+    margin-left: var(--space-8x);
+  }
 }
 
 .header-link-caption,
@@ -96,4 +98,52 @@
   line-height: 100%;
   text-align: center;
   color: var(--white);
+}
+
+/* ドロワーメニュー */
+.drawer-checkbox {
+  display: none;
+}
+
+/* ドロワーメニューと開閉 */
+.drawer-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  height: 100%;
+  width: 60%;
+  transform: translateX(-100%);
+  transition: .4s;
+  background-color: var(--white);
+}
+.drawer-checkbox:checked ~ .drawer-menu {
+  transform: translateX(0);
+}
+
+.drawer-menu ul {
+  list-style-type: none;
+}
+
+.drawer-menu a {
+  display: block;
+  padding: var(--space-4x);
+  color: var(--black-2);
+  text-decoration: none;
+}
+
+/* ドロワーメニューの背景 */
+.drawer-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  cursor: pointer;
+}
+.drawer-checkbox:checked ~ .drawer-background {
+  display: block;
 }
