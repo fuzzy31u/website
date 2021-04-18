@@ -109,16 +109,16 @@
 .drawer-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -60%;
   z-index: 200;
   height: 100%;
   width: 60%;
-  transform: translateX(-100%);
+  transform: translateX(0);
   transition: .4s;
   background-color: var(--white);
 }
 .drawer-checkbox:checked ~ .drawer-menu {
-  transform: translateX(0);
+  transform: translateX(100%);
 }
 
 .drawer-menu ul {
