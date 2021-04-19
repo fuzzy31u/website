@@ -14,7 +14,7 @@ body {
   }
 }
 
-.privacy-policy-contents {
+.contents {
   margin: var(--space-6x) var(--space-6x) calc(16 * var(--space-unit)) var(--space-6x)
 }
 
