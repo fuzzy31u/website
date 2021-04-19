@@ -1,11 +1,6 @@
 .counseling {
   position: relative;
 }
-@media screen and (min-width: 768px) {
-  .counseling {
-    /* margin-top: var(--space-20x); */
-  }
-}
 
 .counseling-image {
   width: 100%;
@@ -86,24 +81,44 @@
   }
 }
 
+.inquiry-buttons {
+  margin-top: var(--space-6x);
+  margin-left: var(--space-6x);
+  margin-right: var(--space-6x);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .inquiry-buttons {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+}
+
 .mail-inquiry-button {
-  margin: var(--space-6x) auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 48px;
-  width: 327px;
+  width: 152px;
   border-radius: 4px;
   background-color: var(--navy);
 }
 @media screen and (min-width: 768px) {
   .mail-inquiry-button {
     height: 64px;
+    width: 327px;
   }
 }
 
 .mail-inquiry-button .button-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: var(--font-3xh);
   color: var(--white);
+}
+
+.LINE-button {
+  width: 152px;
 }
