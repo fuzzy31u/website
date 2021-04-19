@@ -105,6 +105,7 @@
   width: 152px;
   border-radius: 4px;
   background-color: var(--navy);
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .mail-inquiry-button {
@@ -117,6 +118,11 @@
   font-weight: bold;
   font-size: var(--font-3xh);
   color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .mail-inquiry-button .button-title {
+    font-size: var(--font-4x);
+  }
 }
 
 .LINE-button {
