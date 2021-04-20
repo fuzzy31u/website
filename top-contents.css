@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.main-visual-pc {
+  min-width: 1600px;
+}
+
 .message-on-img-woman {
   position: absolute;
   left: var(--space-6x);
@@ -15,6 +19,7 @@
     left: calc(45 * var(--space-unit));
     bottom: calc(54 * var(--space-unit));
     font-size: calc(22 * var(--space-unit));
+    white-space: nowrap;
   }
 }
 
@@ -47,6 +52,7 @@
     margin-left: var(--space-6x);
     margin-bottom: var(--space-10x);
     font-size: var(--space-8x);
+    white-space: nowrap;
   }
 }
 
