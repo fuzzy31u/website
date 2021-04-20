@@ -27,19 +27,18 @@
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: stretch;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .logo-ms-engineer-l {
   margin-left: 7.5%;
+  margin-right: auto;
 }
 
 .header-links {
   display: flex;
   align-items: center;
-  margin-left: 11%;
-  flex-grow: 1;
 }
 
 .header-link {
@@ -73,7 +72,7 @@
   }
 
 .header-entry-button {
-  margin-left: auto;
+  margin-left: var(--space-10x);
   margin-right: calc(14 * var(--space-unit));
   display: flex;
   align-items: center;
