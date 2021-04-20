@@ -8,6 +8,7 @@
     margin-top: var(--space-8x);
     margin-left: 25%;
     margin-right: 25%;
+    min-width: 800px;
   }
 }
 

@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.concept-image-pc {
+  min-width: 1600px;
+}
+
 #concept .main-caption {
   color: var(--white);
 }
@@ -34,6 +38,7 @@
     font-size: var(--font-4xh);
     line-height: 240%;
     letter-spacing: 0.1em;
+    white-space: nowrap;
   }
 }
 

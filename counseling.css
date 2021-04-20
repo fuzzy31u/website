@@ -2,9 +2,8 @@
   position: relative;
 }
 
-.counseling-image {
-  width: 100%;
-  height: auto;
+.counseling-image-pc {
+  min-width: 1600px;
 }
 
 .concerns {
@@ -18,6 +17,7 @@
     margin-top: calc(19 * var(--space-unit));
     margin-left: 36%;
     margin-right: 36%;
+    min-width: 432px;
   }
 }
 
