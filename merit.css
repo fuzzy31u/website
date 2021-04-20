@@ -208,6 +208,8 @@
 }
 
 .income-reference {
+  margin-left: var(--space-6x);
+  margin-right: var(--space-6x);
   font-weight: 500;
   font-size: calc(2.75 * var(--font-unit));
   line-height: 160%;
