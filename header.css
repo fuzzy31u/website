@@ -145,7 +145,7 @@
 }
 
 .drawer-menu ul {
-  margin-top: var(--space-4x);
+  margin-top: var(--space-2x);
   list-style-type: none;
 }
 
