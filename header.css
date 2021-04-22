@@ -106,7 +106,7 @@
 
 @media screen and (min-width: 768px) {
   .header-entry-button .icon-next {
-    margin-left: calc(2.5 * var(--space-unit));
+    margin-left: calc(8 * var(--space-unit));
   }
 }
 
