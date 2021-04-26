@@ -88,6 +88,19 @@
   color: var(--primary-color);
 }
 
+.price-body-basic {
+  margin-top: var(--space-2x);
+  font-weight: bold;
+  font-size: calc(3.75 * var(--font-unit));
+  line-height: 100%;
+  color: var(--red);
+}
+@media screen and (min-width: 768px) {
+  .price-body-basic {
+    margin-top: 0px;
+  }
+}
+
 .price-body {
   margin-top: var(--space-2x);
   font-weight: bold;
@@ -99,6 +112,15 @@
   .price-body {
     margin-top: 0px;
   }
+}
+
+.price-emphasis {
+  margin-right: calc(0.5 * var(--space-unit));
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--font-8x);
+  line-height: 100%;
 }
 
 .price-main {
