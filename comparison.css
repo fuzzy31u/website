@@ -90,7 +90,8 @@
   border: 1px var(--purple-8) solid;
 }
 
-.comparison-table tr:nth-child(n+3):nth-child(-n+4) td:nth-child(2) {
+/* 目指せる年収レベル */
+.comparison-table tr:nth-child(3) td:nth-child(2) {
   font-weight: bold;
   font-size: var(--font-4x);
   text-align: center;
@@ -98,7 +99,8 @@
   color: var(--purple);
 }
 
-.comparison-table tr:nth-child(4) td:nth-child(2)::after {
+/* 目指せる年収レベル */
+.comparison-table tr:nth-child(3) td:nth-child(2)::after {
   content: "※1";
   font-weight: bold;
   font-size: var(--font-3x);
@@ -114,19 +116,20 @@
   color: var(--black-4);
 }
 
-.comparison-table tr:nth-child(n+5) td:nth-child(2) {
+.comparison-table tr:nth-child(n+4) td:nth-child(2) {
   font-weight: bold;
   font-size: var(--font-3x);
   line-height: 160%;
   color: var(--black-4);
 }
 @media screen and (min-width: 768px) {
-  .comparison-table tr:nth-child(n+5) td:nth-child(2) {
+  .comparison-table tr:nth-child(n+4) td:nth-child(2) {
     font-size: var(--font-3xh);
   }
 }
 
-.comparison-table tr:nth-child(n+3):nth-child(-n+4) td:nth-child(3) {
+/* 目指せる年収レベル */
+.comparison-table tr:nth-child(3) td:nth-child(3) {
   font-size: var(--font-4x);
   text-align: center;
   line-height: 100%;
@@ -134,14 +137,14 @@
 }
 
 .comparison-table tr:nth-child(2) td:nth-child(3),
-.comparison-table tr:nth-child(n+5) td:nth-child(3) {
+.comparison-table tr:nth-child(n+4) td:nth-child(3) {
   font-size: var(--font-3x);
   line-height: 160%;
   color: var(--black-2);
 }
 @media screen and (min-width: 768px) {
   .comparison-table tr:nth-child(2) td:nth-child(3),
-  .comparison-table tr:nth-child(n+5) td:nth-child(3) {
+  .comparison-table tr:nth-child(n+4) td:nth-child(3) {
       font-size: var(--font-3xh);
   }
 }
