@@ -86,6 +86,7 @@
   font-size: var(--font-5x);
   line-height: 100%;
   color: var(--primary-color);
+  text-align: center;
 }
 
 .price-body-basic {
