@@ -93,7 +93,7 @@
 }
 
 #faq .entry-button {
-  margin: calc(13.5 * var(--space-unit)) auto 0 auto
+  margin: var(--space-3x) auto 0 auto;
 }
 
 #faq .dead-line {
