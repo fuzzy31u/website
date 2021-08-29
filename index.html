@@ -44,12 +44,15 @@
     <link rel="icon" type="image/x-icon" href="./images/logo-ms-engineer-favicon.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2HYE7LVH0"></script>
+    <script src="scripts/wordpress.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-Z2HYE7LVH0');
+
+      // イベントリスナーの登録
+      document.addEventListener("DOMContentLoaded", drawWordpressPosts);
     </script>    
   </head>
   <body>
@@ -976,6 +979,10 @@
         </div>
       </div>
 
+      <!-- ブログ -->
+      <div id="blog">
+      </div>
+
       <!-- MS.Engineer設立に込めた思い -->
       <div id="concept">
         <img class="sp width-fill-image" src="./images/img-msengineer-sp.png" width="375" height="914">
@@ -1048,7 +1055,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <footer class="footer">
