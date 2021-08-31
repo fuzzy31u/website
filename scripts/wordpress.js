@@ -4,42 +4,67 @@ class WordpressRepository {
   }
 
   async getPosts() {
-    const response = await fetch(this.url);
+    const endPoint = this.url + '/contents/wp-json/wp/v2/posts?_embed';
+    const response = await fetch(endPoint);
+    return response.json();
+  }
+
+  async getImage(id) {
+    const endPoint = this.url + '/contents/wp-json/wp/v2/media/' + id;
+    const response = await fetch(endPoint);
     return response.json();
   }
 }
 
 class WordpressPostsUseCase {
+  get host() {
+    return 'https://ms-engineer.jp';
+  }
+
   async getPosts(limit) {
-    let repo = new WordpressRepository("https://ms-engineer.jp/contents/wp-json/wp/v2/posts");
+    let repo = new WordpressRepository(this.host);
     return repo.getPosts()
-      .then( json => {
+      .then( arr => {
         // ソート
-        return json;
+        return arr;
       })
-      .then( json => {
+      .then( arr => {
         // フィルター
-        return json;
+        return arr;
+      })
+      .then( arr => {
+        return arr.map(post => new WordpressPost(post));
       });
-    }
-}
-
-function drawPosts(posts) {
-  console.log(posts);
-
-  const blog = document.querySelector("#blog");
-  for(const post of posts) {
-    const title = post["title"]["rendered"];
-    const p = document.createElement("p");
-    p.textContent = title;
-    blog.appendChild(p);
   }
 }
 
-function drawWordpressPosts() {
-  let useCase = new WordpressPostsUseCase();
-  useCase.getPosts()
-    .then( json => {
-      drawPosts(json);
-    })
+class WordpressPost {
+  constructor(post) {
+    this.post = post;
+  }
+
+  get title() {
+    return this.post["title"]["rendered"];
+  }
+
+  get thumbnailUrl() {
+    const featuredMedia = this.post['_embedded']['wp:featuredmedia'];
+    if(featuredMedia == null || featuredMedia[0] == null) {
+      // データがない場合は空文字を返す
+      // return '';
+      return 'https://ms-engineer.jp/contents/wp-content/uploads/2021/08/story_header_image.png';
+    }
+
+    return featuredMedia[0]['source_url'];
+  }
+
+  get link() {
+    return this.post['link'];
+  }
+
+  get beginning() {
+    const beginningHtml = this.post['excerpt']['rendered'];
+    const beginning = beginningHtml.replace(/(<([^>]+)>)/gi, '');
+    return beginning.replace(/ \[\&hellip\;\]/, '...');
+  }
 }
