@@ -82,8 +82,7 @@ class WordpressPost {
     const featuredMedia = this.post['_embedded']['wp:featuredmedia'];
     if(featuredMedia == null || featuredMedia[0] == null) {
       // データがない場合は空文字を返す
-      // return '';
-      return 'https://ms-engineer.jp/contents/wp-content/uploads/2021/08/story_header_image.png';
+      return '';
     }
 
     return featuredMedia[0]['source_url'];
