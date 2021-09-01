@@ -8,12 +8,6 @@ class WordpressRepository {
     const response = await fetch(endPoint);
     return response.json();
   }
-
-  async getImage(id) {
-    const endPoint = this.url + '/contents/wp-json/wp/v2/media/' + id;
-    const response = await fetch(endPoint);
-    return response.json();
-  }
 }
 
 class WordpressPostsUseCase {
