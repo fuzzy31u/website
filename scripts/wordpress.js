@@ -21,20 +21,51 @@ class WordpressPostsUseCase {
     return 'https://ms-engineer.jp';
   }
 
-  async getPosts(limit) {
+  async getPosts() {
     let repo = new WordpressRepository(this.host);
     return repo.getPosts()
-      .then( arr => {
-        // ソート
-        return arr;
-      })
-      .then( arr => {
-        // フィルター
-        return arr;
-      })
-      .then( arr => {
-        return arr.map(post => new WordpressPost(post));
+      .then( posts => {
+        return posts.map(post => new WordpressPost(post));
       });
+  }
+
+  async getFilterdPosts(limit) {
+    return this.getPosts()
+      .then( posts => {
+        return this.sort(posts);
+      })
+      .then( posts => {
+        return this.filter(posts, limit);
+      })
+  }
+
+  sort(post) {
+    return post.sort( (lhs, rhs) => {
+      const lhsDate = Date.parse(lhs.modified);
+      const rhsDate = Date.parse(rhs.modified)
+
+      if(lhsDate > rhsDate) {
+        return -1;
+      } else if(lhsDate < rhsDate) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+  }
+
+  filter(posts, limit) {
+    if(posts.length <= limit) {
+      return {
+        posts: posts,
+        hasMore: false
+      };
+    }
+
+    return {
+      posts: posts.slice(0, limit),
+      hasMore: true
+    }
   }
 }
 
@@ -66,5 +97,9 @@ class WordpressPost {
     const beginningHtml = this.post['excerpt']['rendered'];
     const beginning = beginningHtml.replace(/(<([^>]+)>)/gi, '');
     return beginning.replace(/ \[\&hellip\;\]/, '...');
+  }
+
+  get modified() {
+    return this.post['modified'];
   }
 }
