@@ -14,9 +14,11 @@ function drawPosts(posts, hasMore) {
 
   const blog = document.querySelector("#blog");
 
+  // タイトル
   const contentsCaptioin = createContentsCaption();
   blog.appendChild(contentsCaptioin);
 
+  // Wordpress記事への導線
   const blogBlock = createBlogBlock();
   const postItems = createPostItems(posts)
   blogBlock.appendChild(postItems);
