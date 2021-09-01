@@ -26,9 +26,11 @@ class WordpressPostsUseCase {
   async getFilteredPosts(limit) {
     return this.getPosts()
       .then( posts => {
+        // 取得した記事を新しい順に並べる
         return this.sort(posts);
       })
       .then( posts => {
+        // 先頭から limit個 の記事だけにする
         return this.filter(posts, limit);
       })
   }
@@ -87,8 +89,11 @@ class WordpressPost {
   }
 
   get beginning() {
+    // HTMLタグを削除する
     const beginningHtml = this.post['excerpt']['rendered'];
     const beginning = beginningHtml.replace(/(<([^>]+)>)/gi, '');
+
+    // 文末に...を追加
     return beginning.replace(/ \[\&hellip\;\]/, '...');
   }
 
