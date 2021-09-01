@@ -23,7 +23,7 @@ class WordpressPostsUseCase {
       });
   }
 
-  async getFilterdPosts(limit) {
+  async getFilteredPosts(limit) {
     return this.getPosts()
       .then( posts => {
         return this.sort(posts);

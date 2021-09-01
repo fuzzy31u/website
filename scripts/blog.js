@@ -1,6 +1,6 @@
 function drawWordpressPosts() {
   let useCase = new WordpressPostsUseCase();
-  useCase.getFilterdPosts(3)
+  useCase.getFilteredPosts(3)
     .then( res => {
       drawPosts(res.posts, res.hasMore);
     })
