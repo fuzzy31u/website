@@ -1,12 +1,12 @@
 function drawWordpressPosts() {
   let useCase = new WordpressPostsUseCase();
-  useCase.getPosts()
-    .then( posts => {
-      drawPosts(posts);
+  useCase.getFilterdPosts(3)
+    .then( res => {
+      drawPosts(res.posts, res.hasMore);
     })
 }
 
-function drawPosts(posts) {
+function drawPosts(posts, hasMore) {
   console.log(posts);
 
   if(posts.length === 0) {
