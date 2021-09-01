@@ -37,8 +37,8 @@ class WordpressPostsUseCase {
 
   sort(post) {
     return post.sort( (lhs, rhs) => {
-      const lhsDate = Date.parse(lhs.modified);
-      const rhsDate = Date.parse(rhs.modified)
+      const lhsDate = Date.parse(lhs.date);
+      const rhsDate = Date.parse(rhs.date)
 
       if(lhsDate > rhsDate) {
         return -1;
@@ -97,7 +97,7 @@ class WordpressPost {
     return beginning.replace(/ \[\&hellip\;\]/, '...');
   }
 
-  get modified() {
-    return this.post['modified'];
+  get date() {
+    return this.post['date'];
   }
 }
