@@ -7,8 +7,6 @@ function drawWordpressPosts() {
 }
 
 function drawPosts(posts, hasMore) {
-  console.log(posts);
-
   if(posts.length === 0) {
     // 投稿がひとつもない場合には何もしない
     return;
