@@ -1,3 +1,8 @@
+class PostItemThumbnail {
+  static width = 280;
+  static height = 144;
+}
+
 function drawWordpressPosts() {
   let useCase = new WordpressPostsUseCase();
   useCase.getFilteredPosts(3)
@@ -79,8 +84,8 @@ function createPostItem(post) {
 
   const image = document.createElement('img');
   image.setAttribute('class', 'width-fill-image');
-  image.width = 280;
-  image.height = 144;
+  image.width = PostItemThumbnail.width;
+  image.height = PostItemThumbnail.height;
   image.src = post.thumbnailUrl;
   a.appendChild(image);
 
