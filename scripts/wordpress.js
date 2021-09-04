@@ -5,8 +5,10 @@ class WordpressRepository {
 
   async getPosts() {
     const endPoint = this.url + '/contents/wp-json/wp/v2/posts?_embed';
-    const response = await fetch(endPoint);
-    return response.json();
+    return fetch(endPoint)
+      .then( response => {
+        return response.json();
+      });
   }
 }
 
