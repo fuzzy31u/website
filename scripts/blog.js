@@ -82,7 +82,6 @@ function createPostItem(post) {
   image.width = 280;
   image.height = 144;
   image.src = post.thumbnailUrl;
-  console.log('thumbnailUrl: ' + post.thumbnailUrl);
   a.appendChild(image);
 
   const texts = document.createElement('div'); 
