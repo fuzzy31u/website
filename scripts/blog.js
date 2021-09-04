@@ -4,6 +4,9 @@ function drawWordpressPosts() {
     .then( res => {
       drawPosts(res.posts, res.hasMore);
     })
+    .catch( error => {
+      console.log(error);
+    })
 }
 
 function drawPosts(posts, hasMore) {
