@@ -66,3 +66,23 @@
   letter-spacing: 0.1em;
   color: var(--black-2);
 }
+
+.blogs .horizontal-list .contents-link-item {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: var(--space-6x);
+}
+
+.blogs .horizontal-list .contents-link-item .contents-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.contents-link-title {
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--font-4xh);
+  line-height: 100%;
+}

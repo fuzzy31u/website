@@ -70,6 +70,13 @@ function createPostItems(posts) {
     ul.appendChild(postItem);
   }
 
+  // TODO: hasMoreの実装
+  const hasMore = true;
+  if(hasMore) {
+    const contentsLinkItem = createContentsLink();
+    ul.appendChild(contentsLinkItem);
+  }
+
   return ul;
 }
 
@@ -103,6 +110,30 @@ function createPostItem(post) {
   texts.appendChild(text);
 
   a.appendChild(texts);
+
+  return li;
+}
+
+function createContentsLink() {
+  const li = document.createElement('li');
+  li.setAttribute('class', 'contents-link-item');
+
+  const a = document.createElement('a');
+  a.href = 'https://ms-engineer.jp/contents/';
+  a.setAttribute('class', 'contents-link');
+
+  const p = document.createElement('p');
+  p.innerText = 'もっと見る'
+  p.setAttribute('class', 'contents-link-title');
+  a.appendChild(p);
+
+  const img = document.createElement('img');
+  img.src = './images/icon-next.png';
+  img.width = 24;
+  img.height = 24;
+  a.appendChild(img);
+
+  li.appendChild(a);
 
   return li;
 }
