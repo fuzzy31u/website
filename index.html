@@ -21,35 +21,40 @@
     <meta name="twitter:title" content="Ms.Engineer(ミズエンジニア) │ 女性のためのオンラインプログラミングブートキャンプ" />
     <meta name="twitter:description" content="女性に「エンジニア」という新キャリアを。未経験から最短6ヶ月で世界に通用するエンジニアになれる、女性のためのオンラインプログラミングスクールです。">
     <meta name="twitter:image" content="https://ms-engineer.jp/images/img-ms-engineer-ogp.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="color.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="typography.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="margins.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="top-contents.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="voice.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="path.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="merit.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="curriculum.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="skill.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="program.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="support.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="comparison.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="price.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="faq.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="concept.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="counseling.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/color.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/typography.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/margins.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/top-contents.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/voice.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/path.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/merit.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/curriculum.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/skill.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/program.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/support.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/comparison.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/price.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/blog.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/faq.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/concept.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/counseling.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/footer.css" />
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./images/logo-ms-engineer-favicon.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2HYE7LVH0"></script>
+    <script src="./scripts/wordpress.js"></script>
+    <script src="./scripts/blog.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-Z2HYE7LVH0');
+
+      // イベントリスナーの登録
+      document.addEventListener("DOMContentLoaded", drawWordpressPosts);
     </script>    
   </head>
   <body>
@@ -639,6 +644,10 @@
         </div>
       </div>
 
+      <!-- ブログ -->
+      <div id="blog">
+      </div>
+      
       <!-- FAQ -->
       <div id="faq">
         <div class="contents-caption">
@@ -1052,7 +1061,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <footer class="footer">
