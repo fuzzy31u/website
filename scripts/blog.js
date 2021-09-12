@@ -121,7 +121,6 @@ function createContentsLink() {
 
   const a = document.createElement('a');
   a.href = 'https://ms-engineer.jp/contents/';
-  // a.innerText = 'もっと見る';
   a.setAttribute('class', 'contents-link');
 
   const p = document.createElement('p');
