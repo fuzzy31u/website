@@ -114,8 +114,6 @@ function createPostItem(post) {
 }
 
 function createContentsLink() {
-  console.log('see more');
-
   const li = document.createElement('li');
   li.setAttribute('class', 'contents-link-item');
 
