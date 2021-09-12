@@ -70,6 +70,7 @@ function createPostItems(posts) {
     ul.appendChild(postItem);
   }
 
+  // TODO: hasMoreの実装
   const hasMore = true;
   if(hasMore) {
     const contentsLinkItem = createContentsLink();
