@@ -125,7 +125,7 @@ function createContentsLink() {
   a.setAttribute('class', 'contents-link');
 
   const p = document.createElement('p');
-  p.innerText = 'see more'
+  p.innerText = 'もっと見る'
   p.setAttribute('class', 'contents-link-title');
   a.appendChild(p);
 
