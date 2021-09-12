@@ -128,6 +128,13 @@ function createContentsLink() {
   p.setAttribute('class', 'contents-link-title');
   a.appendChild(p);
 
+  const img = document.createElement('img');
+  img.src = './images/icon-next.png';
+  img.width = 24;
+  img.height = 24;
+  img.setAttribute('class', 'icon-next');
+  a.appendChild(img);
+
   li.appendChild(a);
 
   return li;
