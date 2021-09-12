@@ -70,6 +70,12 @@ function createPostItems(posts) {
     ul.appendChild(postItem);
   }
 
+  const hasMore = true;
+  if(hasMore) {
+    const contentsLinkItem = createContentsLink();
+    ul.appendChild(contentsLinkItem);
+  }
+
   return ul;
 }
 
@@ -103,6 +109,27 @@ function createPostItem(post) {
   texts.appendChild(text);
 
   a.appendChild(texts);
+
+  return li;
+}
+
+function createContentsLink() {
+  console.log('see more');
+
+  const li = document.createElement('li');
+  li.setAttribute('class', 'contents-link-item');
+
+  const a = document.createElement('a');
+  a.href = 'https://ms-engineer.jp/contents/';
+  // a.innerText = 'もっと見る';
+  a.setAttribute('class', 'contents-link');
+
+  const p = document.createElement('p');
+  p.innerText = 'see more'
+  p.setAttribute('class', 'contents-link-title');
+  a.appendChild(p);
+
+  li.appendChild(a);
 
   return li;
 }
