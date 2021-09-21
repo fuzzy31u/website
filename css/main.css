@@ -64,7 +64,7 @@ body {
 #contents>div:nth-child(n+2):nth-child(-n+8) {
   margin-top: var(--space-20x);
 }
-/* couseling */
+/* counseling */
 #contents>div:nth-child(9) {
   margin-top: 0;
 }
@@ -76,7 +76,7 @@ body {
 #contents>div:nth-child(14) {
   margin-top: calc(12 * var(--space-unit));
 }
-/* couseling */
+/* counseling */
 #contents>div:nth-child(15) {
   margin-top: 0;
 }
@@ -93,7 +93,7 @@ body {
   #contents>div:nth-child(n+4):nth-child(-n+8) {
     margin-top: calc(28.5 * var(--space-unit));
   }
-  /* couseling */
+  /* counseling */
   #contents>div:nth-child(9) {
     margin-top: var(--space-20x);
   }
@@ -105,7 +105,7 @@ body {
   #contents>div:nth-child(14) {
     margin-top: var(--space-20x);
   }
-  /* couseling */
+  /* counseling */
   #contents>div:nth-child(15) {
     margin-top: 0;
   }
