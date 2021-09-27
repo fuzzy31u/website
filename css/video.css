@@ -1,0 +1,47 @@
+.video-contents {
+  margin-top: var(--space-6x);
+}
+@media screen and (min-width: 768px) {
+  .video-contents {
+    margin-top: calc(3.5 * var(--space-unit));
+    margin-left: var(--space-h-pc);
+    margin-right: var(--space-h-pc);
+  };
+}
+
+.videos {
+  display: flex;
+  flex-flow: column;
+}
+@media screen and (min-width: 768px) {
+  .videos {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+
+.video-box {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+@media screen and (min-width: 768px) {
+  .video-box {
+    width: 48%;
+    padding-top: 27%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .video-box + .video-box {
+    margin: var(--space-4x) 0 0 0;
+  }
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
