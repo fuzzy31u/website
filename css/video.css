@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 767px) {
   .video-box + .video-box {
-    margin: var(--space-4x) 0 0 0;
+    margin-top: var(--space-6x);
   }
 }
 
