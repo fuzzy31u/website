@@ -1,4 +1,3 @@
-
 .faq-contents {
   margin-top: var(--space-6x);
   margin-left: var(--space-6x);
@@ -9,7 +8,7 @@
     margin-top: calc(3.5 * var(--space-unit));
     margin-left: var(--space-h-pc);
     margin-right: var(--space-h-pc);
-  };
+  }
 }
 
 .faq {
@@ -18,11 +17,11 @@
 }
 
 .faq-body {
-  margin: var(--space-3x) var(--space-4x) var(--space-3x) var(--space-4x)
+  margin: var(--space-3x) var(--space-4x) var(--space-3x) var(--space-4x);
 }
 @media screen and (min-width: 768px) {
   .faq-body {
-    margin: var(--space-6x) var(--space-8x) var(--space-6x) var(--space-6x)
+    margin: var(--space-6x) var(--space-8x) var(--space-6x) var(--space-6x);
   }
 }
 
@@ -34,7 +33,7 @@
 .acd-content {
   height: 0;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
   visibility: hidden;
 }
 
@@ -88,12 +87,12 @@
   color: var(--black-2);
 }
 
-.faq+.faq{
-  margin-top: var(--space-3x)
+.faq + .faq {
+  margin-top: var(--space-3x);
 }
 
 #faq .entry-button {
-  margin: var(--space-8x) auto 0 auto;
+  margin: var(--space-3x) auto 0 auto;
 }
 
 #faq .dead-line {
