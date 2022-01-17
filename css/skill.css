@@ -37,7 +37,11 @@
   font-weight: bold;
   font-size: var(--font-4x);
   line-height: 140%;
-  background: linear-gradient(91.68deg, var(--primary-color) 0%, var(--primary-color-2) 100%);
+  background: linear-gradient(
+    91.68deg,
+    var(--primary-color) 0%,
+    var(--primary-color-2) 100%
+  );
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -48,7 +52,7 @@
   font-weight: bold;
   font-size: var(--font-6x);
   line-height: 100%;
-  color: #D8DDEE;
+  color: #d8ddee;
 }
 
 .skill-caption .caption-sub .number {
@@ -62,19 +66,23 @@
   color: var(--black-2);
 }
 
+#skills .entry-button {
+  margin: var(--space-3x) auto 0 auto;
+}
+
 @media screen and (max-width: 767px) {
-  .skill+.skill {
+  .skill + .skill {
     margin-top: var(--space-3x);
   }
 }
 @media screen and (min-width: 768px) {
-  .skills .skill:nth-child(n+2):nth-child(-n+3),
-  .skills .skill:nth-child(n+5) {
+  .skills .skill:nth-child(n + 2):nth-child(-n + 3),
+  .skills .skill:nth-child(n + 5) {
     margin-left: 2%;
   }
 }
 @media screen and (min-width: 768px) {
-  .skills .skill:nth-child(n+4) {
+  .skills .skill:nth-child(n + 4) {
     margin-top: 2%;
   }
 }
