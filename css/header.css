@@ -92,7 +92,8 @@
 .header-sp .header-entry-button {
   width: fit-content;
   padding: 6px;
-  margin: auto;
+  margin-right: var(--space-4x);
+  margin-bottom: var(--space-6x);
   background: linear-gradient(91.68deg, var(--red) 0%, var(--orange) 100%);
 }
 

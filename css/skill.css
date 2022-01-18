@@ -70,6 +70,14 @@
   margin: var(--space-3x) auto 0 auto;
 }
 
+#skills .comment-body {
+  margin-top: calc(6.5 * var(--font-unit));
+}
+
+#skills img {
+  margin-top: calc(6.5 * var(--font-unit));
+}
+
 @media screen and (max-width: 767px) {
   .skill + .skill {
     margin-top: var(--space-3x);
