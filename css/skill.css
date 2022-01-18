@@ -74,7 +74,11 @@
   margin-top: calc(6.5 * var(--font-unit));
 }
 
-#skills img {
+#skills img.sp {
+  margin-top: calc(6.5 * var(--font-unit));
+}
+
+#skills img.pc {
   margin-top: calc(6.5 * var(--font-unit));
 }
 
