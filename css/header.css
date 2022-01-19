@@ -1,6 +1,11 @@
 .header-sp {
   height: 56px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: var(--white);
 }
 @media screen and (min-width: 768px) {
   .header-sp {
@@ -46,7 +51,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header-link+.header-link {
+  .header-link + .header-link {
     margin-left: var(--space-8x);
   }
 }
@@ -78,11 +83,20 @@
   display: flex;
   align-items: center;
   width: 60%;
-  border-radius:4px;
+  border-radius: 4px;
   text-decoration: none;
   color: var(--white);
-  background: linear-gradient(91.68deg, var(--primary-color) 0%, var(--primary-color-2) 100%);
+  background: linear-gradient(91.68deg, var(--red) 0%, var(--orange) 100%);
 }
+
+.header-sp .header-entry-button {
+  width: fit-content;
+  padding: 6px;
+  margin-right: var(--space-4x);
+  margin-bottom: var(--space-6x);
+  background: linear-gradient(91.68deg, var(--red) 0%, var(--orange) 100%);
+}
+
 @media screen and (min-width: 768px) {
   .header-entry-button {
     margin-top: 0;
@@ -137,7 +151,7 @@
   height: 100%;
   width: 60%;
   transform: translateX(0);
-  transition: .4s;
+  transition: 0.4s;
   background-color: var(--white);
 }
 .drawer-checkbox:checked ~ .drawer-menu {
@@ -165,7 +179,7 @@
   z-index: 100;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 .drawer-checkbox:checked ~ .drawer-background {
